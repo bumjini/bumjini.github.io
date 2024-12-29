@@ -121,6 +121,10 @@ collections:
   articles:
     output: true
     permalink: /articles/:path/
+  memo:
+    output: true
+    permalink: /memo/:path/
+
 
 
 news_limit: 10000

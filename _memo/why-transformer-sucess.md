@@ -7,10 +7,10 @@ authors:
 bibliography: all.bib
 giscus_comments: false
 disqus_comments: false
-date: 2024-01-10
+date: 2024-12-28
 featured: true
-img: /assets/imgs/bp.png
-title: 'Transformer Architecture가 학습에 성공한 이유: 표현력'
+img: /assets/img/bp.png
+title: '[표현력] <br> Transformer Architecture가 학습에 성공한 이유:'
 category: 'AI'
 description: 'Transformer Architecture가 학습에 성공한 이유: 표현력'
 _styles: >
