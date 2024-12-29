@@ -9,7 +9,7 @@ giscus_comments: false
 disqus_comments: false
 date: 2024-12-28
 featured: true
-img: https://1drv.ms/i/c/ae042a624064f8ca/IQSELW52xbNzSpkLUMGoTl2gAWm_-uN2ILPvshA0Vkn_fCM?width=256
+img: assets/img/bp-480.webp
 title: '[표현력] Why does Transformer Architecture succeed?'
 category: 'AI'
 description: 'Discussion on why Transformer Architecture succeeds based on symbolic and subsymbolic representations'
@@ -30,17 +30,86 @@ _styles: >
         margin: 20px auto;
         transition: transform 0.3s ease;
         display: block;
+        cursor: pointer;
     }
     .styled-image:hover {
         transform: scale(1.05);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        padding: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0,0,0,0.9);
+        border-radius: 8px;
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 80vw;
+        max-height: 80vh;
+        object-fit: contain;
+    }
+
+    .modal.show {
+        display: block;
+    }
+
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: #f1f1f1;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
     }
 
 ---
 
 
 
-<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQSELW52xbNzSpkLUMGoTl2gAWm_-uN2ILPvshA0Vkn_fCM?width=1024" width="1024" height="auto" class="styled-image" />
+<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQSELW52xbNzSpkLUMGoTl2gAWm_-uN2ILPvshA0Vkn_fCM?width=1024" width="1024" height="auto" class="styled-image" onclick="openModal(this.src)" />
 
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+function openModal(imgSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.classList.add("show");
+    modalImg.src = imgSrc;
+}
+
+function closeModal() {
+    document.getElementById("imageModal").classList.remove("show");
+}
+
+// 모달 바깥 클릭시 닫기
+window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+// ESC 키로 모달 닫기
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
+</script>
 
 <h2> Transformer 모델의 성공에 가장 크게 기여한 것은 Number of Representation 이다. </h2>
 
