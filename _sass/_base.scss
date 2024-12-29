@@ -178,9 +178,17 @@ a, table.table a {
 }
 
 figure, img {
-  max-width: 40vw;
+  max-width: 100%;
+  height: auto;
   margin-top: 0.0rem;
+  display: block;
+}
 
+@media (max-width: 768px) {
+  figure, img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 blockquote {
