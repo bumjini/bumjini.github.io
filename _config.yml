@@ -17,7 +17,7 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🪴  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://fxnnxc.github.io # the base hostname & protocol for your site
+url: https://bumjini.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -54,7 +54,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: fxnnxc # your GitHub user name
+github_username: bumjini # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: # your LinkedIn user name
@@ -96,7 +96,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 giscus:
-  repo: fxnnxc/fxnnxc      # <your-github-user-name>/<your-github-repo-name>
+  repo: bumjini/bumjini      # <your-github-user-name>/<your-github-repo-name>
   repo_id: MDEwOlJlcG9zaXRvcnkzMjQ2NjUxMTU=
   category: Q&A             # name of the category under which discussions will be created
   category_id: DIC_kwDOE1n_G84CYOk_
@@ -118,58 +118,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  main_articles:
+  articles:
     output: true
-    permalink: /main_articles/:path/
-  main_projects:
-    output: true
-    permalink: /main_projects/:path/
-  main_papers:
-    output: true
-    permalink: /main_papers/:path/
-  side_articles:
-    output: true
-    permalink: /side_articles/:path/
-  side_projects:
-    output: true
-    permalink: /side_projects/:path/
-  side_papers:
-    output: true
-    permalink: /side_papers/:path/
-  bjp:
-    output: true
-    permalink: /bjp/:path/
-  share:
-    output: true
-    permalink: /share/:path/
-  kor:
-    output: true
-    permalink: /kor/:path/
-  neuron:
-    output: true
-    permalink: /neuron/:path/
-  experiment:
-    output: true
-    permalink: /experiment/:path/
-  Pkolmar:
-    output: true
-    permalink: /Pkolmar/:path/
-  Padd_cps:
-    output: true
-    permalink: /Padd_cps/:path/
-  study:
-    output: true
-    permalink: /study/:path/
-  Rsip:
-    output: true
-    permalink: /Rsip/:path/
-  Rparchgrad:
-    output: true
-    permalink: /Rparchgrad/:path/
-  book:
-    output: true
-    permalink: /book/:path/
-
+    permalink: /articles/:path/
 
 
 news_limit: 10000

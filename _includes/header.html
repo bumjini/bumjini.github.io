@@ -40,8 +40,10 @@
               </li> -->
               {% if site.blog_name %}
               <!-- Blog -->
+
+
               <li style="font-size: 17px" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/main_papers/' | relative_url }}"> Papers 
+                <a class="nav-link" href="{{ '/articles/' | relative_url }}"> Articles 
                   {%- if page.title == "blog" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -49,15 +51,7 @@
               </li>
 
               <li style="font-size: 17px" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/main_articles/' | relative_url }}"> Articles 
-                  {%- if page.title == "blog" -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
-              </li>
-
-              <li style="font-size: 17px" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/main_projects/' | relative_url }}"> Projects
+                <a class="nav-link" href="{{ '/memo/' | relative_url }}"> Memo
                   {%- if page.title == "blog" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
