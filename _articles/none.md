@@ -9,8 +9,8 @@ giscus_comments: false
 disqus_comments: false
 date: 2024-01-10
 featured: true
-img: /assets/img/bp.png
-title: '[표현력] <br> Transformer Architecture가 학습에 성공한 이유:'
+img: assets/img/bp.png
+title: '[표현력] none'
 category: 'AI'
 description: 'Transformer Architecture가 학습에 성공한 이유: 표현력'
 _styles: >

@@ -9,7 +9,7 @@ giscus_comments: false
 disqus_comments: false
 date: 2024-12-28
 featured: true
-img: /assets/img/bp.png
+img: assets/img/bp.png
 title: '[표현력] <br> Transformer Architecture가 학습에 성공한 이유:'
 category: 'AI'
 description: 'Transformer Architecture가 학습에 성공한 이유: 표현력'
@@ -25,4 +25,9 @@ _styles: >
 
 ---
 
-## Test  Tes
+## Expressiveness of Subsymbolic Representation 
+
+
+
+
+## Subsymbolic Representation 
