@@ -9,8 +9,8 @@ giscus_comments: false
 disqus_comments: false
 date: 2024-12-29
 featured: true
-img: assets/img/bp.png
-title: '[Vienna 1900] 시대적 배경'
+img: assets/img/vienna.jpg
+title: '[Vienna 1900] <br> 1. 시대적 배경'
 category: 'AI'
 description: 'Vien Secession, 생물학과 Ringstrasse'
 _styles: >
@@ -72,7 +72,11 @@ Klimt의 대표작 중 하나인 **"아델레 블로흐-바우어의 초상"(Por
 
 <img src="https://1drv.ms/i/c/ae042a624064f8ca/IQS9HCSCnziqTasH5mqK0j4QAbyqQdvcbrTsyvHN8vNjyiY?width=1024" width="1024" height="auto" class="styled-image"/>
 
-그 외에도 **"The Kiss"**(1907–1908)와 **"Danaë"**(1907)는 인간의 사랑과 생명의 근원을 상징적으로 표현하며, 그의 독창적인 예술 세계를 더욱 돋보이게 만든다.
+
+그 외에도 "The Kiss"(1907–1908)와 "Danaë"(1907)는 인간의 사랑과 생명의 근원을 상징적으로 표현하며, 그의 독창적인 예술 세계를 더욱 돋보이게 만든다. 이후에 Klimt의 새로운 시도는 코코슈카와 실레에게 영향을 끼쳤다. 특히, 에곤 실레는 클림트의 화려한 장식성과 상징주의적 표현에서 깊은 영향을 받았으며, 이를 바탕으로 자신의 독특한 스타일을 발전시켰다. 실레의 작품은 클림트와 마찬가지로 인간의 내면과 감정을 탐구하지만, 보다 극단적인 형태와 표현을 통해 심리적 긴장과 고독을 강조하였다.
+
+<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQRnBRjyFSONTJlqLkiOSCEgAVVn0DQtDmPCTxCa7jYfxWI?width=1024" width="1024" height="auto" class="styled-image"/>
+
 
 <h2>예술과 과학의 융합: 새로운 시선의 탄생</h2>
 
