@@ -39,7 +39,7 @@ _styles: >
 
 
 
-<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQSELW52xbNzSpkLUMGoTl2gAWm_-uN2ILPvshA0Vkn_fCM?width=1024" width="1024" height="auto" class="styled-image" />
+<img src="/assets/img/alice01.png" width="1024" height="auto" class="styled-image" />
 
 
 <h2> Transformer 모델의 성공에 가장 크게 기여한 것은 Number of Representation 이다. </h2>
