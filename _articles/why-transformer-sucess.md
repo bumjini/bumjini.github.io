@@ -9,7 +9,7 @@ giscus_comments: false
 disqus_comments: false
 date: 2024-12-28
 featured: true
-img: assets/img/bp-480.webp
+img: assets/img/bp.png
 title: '[표현력] Why does Transformer Architecture succeed?'
 category: 'AI'
 description: 'Discussion on why Transformer Architecture succeeds based on symbolic and subsymbolic representations'
