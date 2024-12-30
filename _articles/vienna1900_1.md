@@ -36,7 +36,7 @@ _styles: >
 
 ---
 
-<img src="assets/img/vienna.png" width="1024" height="auto" class="styled-image"/>
+<img src="/assets/img/vienna.png" width="1024" height="auto" class="styled-image"/>
 
 <h2>Klimt, Schiele, Kokoschka 등 표현주의 화가들</h2>
 그들이 시도한 방식은 급진적이었지만, 이것은 단순한 예술적 실험이 아니었다. 당시 시대적 배경과 과학 및 철학의 변화가 이들에게 영향을 미쳤다. 무엇보다 인체, 특히 생물학에 대해 더 깊이 관찰하게 되면서 보이는 것 이상의 진리를 탐구하게 되었다. 이러한 움직임은 심리학에도 영향을 끼쳤다. 당시 지그문트 프로이트(Sigmund Freud, 1856–1939)의 인간 내면에 대한 연구는 무의식과 욕망, 충동 같은 보이지 않는 요소들이 인간 행동을 결정짓는다는 혁신적 이론을 제시했다. 이는 예술가들에게도 큰 영감을 주어 그들의 작품에서 인간의 내적 세계를 탐구하는 방식으로 이어졌다.
