@@ -10,7 +10,7 @@ disqus_comments: false
 date: 2024-12-29
 featured: true
 img: assets/img/bp.png
-title: '[Logic] Horn Logic'
+title: '[Logic] Types of Logic'
 category: 'AI'
 description: '조건의 disjunction으로부터 결론을 유도하는 논리'
 _styles: >
@@ -35,6 +35,12 @@ _styles: >
 
 ---
 
+- [Horn Logic]
+- [Propositional Logic]
+- [First-Order Logic]
+- [Modal Logic]
+
+
 <img src="/assets/img/bp.png" width="40%" height="auto" class="styled-image"/>
 
 ## Horn Logic
@@ -54,9 +60,7 @@ $$
 \neg B_1 \vee \neg B_2 \vee \cdots \vee \neg B_n \vee H
 $$
 
----
-
-## 유형 
+### Horn Clause의 유형
 
 Horn Clause는 다음과 같은 유형으로 분류된다. 
 
@@ -79,7 +83,6 @@ Horn Clause는 다음과 같은 유형으로 분류된다.
 Rule에서는 **변수(variable)**가 주어진다.  
 Query에서는 모두 주어진 후 **변수의 값을 찾는다.**  
 
----
 
 ## Horn Clause의 요소
 
@@ -95,32 +98,17 @@ Query에서는 모두 주어진 후 **변수의 값을 찾는다.**
 > 
 > 여기서 $A \wedge B$ 는 Body이고, $C$는 Head이다.
 
----
 
-## Decision Tree와의 비교
+### Decision Tree와의 비교
 
-Horn Logic는 **Decision Tree**와 유사한 구조적 흐름을 가진다.  
-- Horn Logic에서는 각 규칙들을 만족하는지 여부를 토대로 추론을 진행한다.  
-- Decision Tree에서는 각 노드들을 순차적으로 방문하여 만족하는 조건을 찾아내는 방식으로 추론한다.
+Horn Logic는 **Decision Tree**와 유사한 구조적 흐름을 가진다. Horn Logic에서는 각 규칙들을 만족하는지 여부를 토대로 추론을 진행한다. Decision Tree에서는 각 노드들을 순차적으로 방문하여 만족하는 조건을 찾아내는 방식으로 추론한다.
 
-### 차이점
-- **학습 과정**:
-  - Horn Logic은 Horn Clause를 정의하는 방식으로 진행된다.
-  - Decision Tree는 데이터를 토대로 학습한다.
-- **표현 방식**:
-  - Decision Tree는 **subsymbolic 표현**을 활용하여 데이터를 분류하지만,  
-    이를 symbolic한 규칙으로 해석할 수도 있다.
+차이점은 다음과 같다. **학습 과정**: Horn Logic은 Horn Clause를 정의하는 방식으로 진행된다. Decision Tree는 데이터를 토대로 학습한다. **표현 방식**: Decision Tree는 **subsymbolic 표현**을 활용하여 데이터를 분류하지만,이를 symbolic한 규칙으로 해석할 수도 있다. 결과적으로, 두 방식 모두 규칙 기반으로 작동하지만 다루는 대상과 학습 방식에는 차이가 있다.
 
-결과적으로, 두 방식 모두 규칙 기반으로 작동하지만 다루는 대상과 학습 방식에는 차이가 있다.
 
----
+### 규칙 선택 문제
 
-## 규칙 선택 문제
-
-특히 **RuleFit**의 경우 Horn Logic과 일치도가 높다.  
-하지만 RuleFit은 **만족하는 규칙들에 대해 가중치**를 두고 최종 값을 예측한다는 점에서 차이가 있다.
-
-### Horn Logic에서의 규칙 선택 문제
+특히 **RuleFit**의 경우 Horn Logic과 일치도가 높다. 하지만 RuleFit은 **만족하는 규칙들에 대해 가중치**를 두고 최종 값을 예측한다는 점에서 차이가 있다.
 Horn Logic에서도 만족하는 여러 규칙이 있을 경우, 이를 해결하는 방안이 필요하다:
 1. **규칙 접근 순서**:
    - 규칙의 순서를 고정하여 우선 탐색한다.
@@ -136,7 +124,7 @@ Horn Logic과 Decision Tree는 모두 **조건 기반 추론**에 초점이 맞�
 이를 해결하기 위한 다양한 접근법이 활용될 수 있다.
 
 
-## Prolog 예시
+### Prolog 예시
 
 <d-code block language="python">
 
@@ -163,3 +151,49 @@ ancestor(X, Z) :- parent(X, Y), ancestor(Y, Z).
 % 5. ?- grandparent(Who, charlie).     % charlie의 조부모는 누구인가?
 
 </d-code>
+
+### Datalog와 Horn Clause의 차이점
+
+| **특징**            | **Horn Clause**                                  | **Datalog**                                                |
+|----------------------|--------------------------------------------------|-----------------------------------------------------------|
+| **목적**            | 논리적 추론, 이론적 논리 연구                     | 데이터베이스 질의 및 논리적 데이터 처리                    |
+| **표현력**          | 함수와 무한 도메인을 허용                          | 함수 사용 불가, 유한 도메인만 허용                         |
+| **안전성**          | 변수 안전성 보장 필요 없음                         | **안전한 변수** 조건: Body에 등장한 변수만 Head에서 사용    |
+| **데이터 도메인**    | 무제한적인 데이터 도메인 허용                      | 데이터베이스와 같은 유한한 도메인                          |
+| **추론 방식**       | 전방향 추론(Forward Chaining), 후방향 추론 가능    | 주로 **전방향 추론(Forward Chaining)** 사용                |
+| **응용 분야**       | 논리 프로그래밍(Prolog), 이론적 논리 연구           | 데이터베이스 관리, 논리적 질의 (예: SQL-like 질의 시스템)   |
+
+### 예제 비교
+
+```prolog
+% Horn Clause 규칙 정의
+ancestor(X, Z) :- parent(X, Z).
+ancestor(X, Z) :- parent(X, Y), ancestor(Y, Z).
+
+% 사실 정의
+parent(alice, bob).
+parent(bob, charlie).
+
+% 질의
+% ?- ancestor(alice, charlie).   % alice는 charlie의 조상인가?
+% 결과: true
+```
+
+
+```prolog
+% Datalog 규칙 정의
+ancestor(X, Z) :- parent(X, Z).
+ancestor(X, Z) :- parent(X, Y), ancestor(Y, Z).
+
+% 사실 정의
+parent(alice, bob).
+parent(bob, charlie).
+
+% 질의
+% ancestor(alice, charlie)?    % alice는 charlie의 조상인가?
+% 결과: true
+```
+
+--- 
+
+

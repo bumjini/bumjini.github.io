@@ -11,7 +11,7 @@ date: 2024-12-29
 featured: true
 img: assets/img/vienna.png
 title: '[Vienna 1900] <br> 2. 사진으로 담기지 무언가'
-category: 'AI'
+category: 'Vienna 1900'
 description: 'Vien Secession, 생물학과 Ringstrasse'
 _styles: >
     .table {

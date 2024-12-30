@@ -11,7 +11,7 @@ date: 2024-12-29
 featured: true
 img: assets/img/vienna.png
 title: '[Vienna 1900] <br> 1. 시대적 배경'
-category: 'AI'
+category: 'Vienna 1900'
 description: 'Vien Secession, 생물학과 Ringstrasse'
 _styles: >
     .table {

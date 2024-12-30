@@ -2,6 +2,7 @@
 layout: default
 title: main_projects
 permalink: /articles/
+display_categories: ['Vienna 1900', 'AI', ]
 ---
 <!-- pages/projects.md -->
 <div class="projects">

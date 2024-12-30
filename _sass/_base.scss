@@ -552,12 +552,13 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    color: #5d5d5d;
+    border-bottom: 3px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+    font-family: 'Times New Roman', Times, serif;
   }
 }
 
