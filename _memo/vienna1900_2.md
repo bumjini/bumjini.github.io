@@ -18,7 +18,7 @@ _styles: >
         padding-top:200px;
         margin-bottom: 2.5rem;
         border-bottom: 2px;
-    }
+    }ㅡ
     .p {
         font-size:20px;
     }
