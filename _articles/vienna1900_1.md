@@ -36,7 +36,7 @@ _styles: >
 
 ---
 
-<img src="/assets/img/vienna.png" width="1024" height="auto" class="styled-image"/>
+<img src="/assets/img/vienna.png" width="50%" height="auto" class="styled-image"/>
 
 <h2>Klimt, Schiele, Kokoschka 등 표현주의 화가들</h2>
 그들이 시도한 방식은 급진적이었지만, 이것은 단순한 예술적 실험이 아니었다. 당시 시대적 배경과 과학 및 철학의 변화가 이들에게 영향을 미쳤다. 무엇보다 인체, 특히 생물학에 대해 더 깊이 관찰하게 되면서 보이는 것 이상의 진리를 탐구하게 되었다. 이러한 움직임은 심리학에도 영향을 끼쳤다. 당시 지그문트 프로이트(Sigmund Freud, 1856–1939)의 인간 내면에 대한 연구는 무의식과 욕망, 충동 같은 보이지 않는 요소들이 인간 행동을 결정짓는다는 혁신적 이론을 제시했다. 이는 예술가들에게도 큰 영감을 주어 그들의 작품에서 인간의 내적 세계를 탐구하는 방식으로 이어졌다.
@@ -72,12 +72,12 @@ Klimt는 여성의 신체를 자연의 조화로운 형상으로 표현하며, �
 
 Klimt의 대표작 중 하나인 **"아델레 블로흐-바우어의 초상"(Portrait of Adele Bloch-Bauer I, 1907)**는 이러한 특징의 정점을 보여준다. 이 작품은 "금의 여인"이라는 별칭으로도 불리며, 금박과 복잡한 패턴을 통해 아르 누보 양식과 Klimt의 독창적인 표현이 조화를 이루고 있다.  
 
-<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQS9HCSCnziqTasH5mqK0j4QAbyqQdvcbrTsyvHN8vNjyiY?width=1024" width="1024" height="auto" class="styled-image"/>
+<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQS9HCSCnziqTasH5mqK0j4QAbyqQdvcbrTsyvHN8vNjyiY?width=1024" width="70%" height="auto" class="styled-image"/>
 
 
 그 외에도 "The Kiss"(1907–1908)와 "Danaë"(1907)는 인간의 사랑과 생명의 근원을 상징적으로 표현하며, 그의 독창적인 예술 세계를 더욱 돋보이게 만든다. 이후에 Klimt의 새로운 시도는 코코슈카와 실레에게 영향을 끼쳤다. 특히, 에곤 실레는 클림트의 화려한 장식성과 상징주의적 표현에서 깊은 영향을 받았으며, 이를 바탕으로 자신의 독특한 스타일을 발전시켰다. 실레의 작품은 클림트와 마찬가지로 인간의 내면과 감정을 탐구하지만, 보다 극단적인 형태와 표현을 통해 심리적 긴장과 고독을 강조하였다.
 
-<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQRnBRjyFSONTJlqLkiOSCEgAVVn0DQtDmPCTxCa7jYfxWI?width=1024" width="1024" height="auto" class="styled-image"/>
+<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQRnBRjyFSONTJlqLkiOSCEgAVVn0DQtDmPCTxCa7jYfxWI?width=1024" width="70%" height="auto" class="styled-image"/>
 
 
 <h2>예술과 과학의 융합: 새로운 시선의 탄생</h2>
