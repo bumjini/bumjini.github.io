@@ -275,6 +275,9 @@ subsymbolic이 해결하지 못하는 문제를 외부에서 처리하는 것에
 Subsymbolic은 symbolic을 다루면서 어떻게 형성되어야 하며, 
 이 때 필요한 모듈은 무엇이고, 어떻게 인간 수준의 발전을 야기할 수 있는가?  
 
+
+가정: Symbolic을 다루면서 Amortization은 다른 형태로 변형된다. 
+
 ### 학습이라는 것은 무엇인가? (Machine Learning)
 
 <blockquote>
