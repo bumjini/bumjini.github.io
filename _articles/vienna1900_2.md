@@ -45,7 +45,7 @@ _styles: >
 
 오토 슈미트(Otto Schmidt, 1863–1943)의 여성 나체 사진은 1900년경 촬영되었으며, 동일한 포즈를 기반으로 구스타프 클림트(Gustav Klimt, 1862–1918)가 소묘(drawing)를 그렸다. 
 
-<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQR6QnjOJhQtT60S0bIWCdvWARvNUBnpZsZXaZ5WdmEZK1g?width=1024" width="80%" height="auto" class="styled-image"/>
+<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/klimt02-nude.JPG" width="60%" height="auto" class="styled-image"/>
 
 흥미로운 점은 그의 소묘에서 여성이 사진사를 의식하기보다 자기 자신에게 집중하며, 자신의 생각에 몰두한 모습을 보여준다는 것이다. 이는 당시 인간의 내면을 표현하려 했던 표현주의(Expressionism) 화가들의 시대상을 반영한다.
 
@@ -74,9 +74,9 @@ _styles: >
 3. 몸짓, 특히 손짓은 감정을 전달할 수 있다.  
 4. 감정의 양극단인 접근과 회피는 예외 없이 성욕이나 공격성을 통해 형성된다.  
 
-<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQTKgNZko8G8QIYmNOrTZ4sGAZTX7w485aA0KiVSqzyYNww?width=1024" width="60%" height="auto" class="styled-image"/>
-<figcaption>The Trance Player, Portrait of Ernst Reinhold (1909). 왼손은 4개의 손가락밖에 없다. 이에 대해서 코코슈카는 이렇게 말한다. "내게는 손가락 다섯개, 귀 두 개, 코 하나 같은 세세한 사항을 나열하기보다는 모델의 정신을 조명하는 것이 더 중요했다."</figcaption>
 
+<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/ok1-reinhold.png" width="60%" height="auto" class="styled-image"/>
+<figcaption>The Trance Player, Portrait of Ernst Reinhold (1909). 왼손은 4개의 손가락밖에 없다. 이에 대해서 코코슈카는 이렇게 말한다. "내게는 손가락 다섯개, 귀 두 개, 코 하나 같은 세세한 사항을 나열하기보다는 모델의 정신을 조명하는 것이 더 중요했다."</figcaption>
 <br>
 
 ## Symbolic Knowledge and Subsymbolic Knowledge
@@ -94,9 +94,11 @@ _styles: >
 
 1909년에 실레는 그의 여동생 게르티 실레의 남편, 안톤 페슈카를 모델 그렸다. 당시 에곤 실레의 그림에는 클림트의 영향을 받은 장식적 무늬인 네모 안에 동그라미가 있는 형태가 사용되었음을 확인할 수 있다. 하지만 금색 대신 은색 장식을 사용한 점은 실레가 클림트와는 다른 방향성을 추구하고 있음을 암시하는 듯하다.
 
-<img src="https://1drv.ms/i/c/ae042a624064f8ca/IQRO1v-JuyzmQrwDkVq43Vv7AYdyX0tbkG6EvxMj2x-cFGY?width=1024" width="60%" height="auto" class="styled-image"/>
+<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/egon02-portrait-of-anton.png" width="60%" height="auto" class="styled-image"/>
 <figcaption>Egon Schiele, Portrait of the Artist  Anton Peschka (1909)</figcaption>
 <br>
+
+
 페슈카의 초상화는 몇 가지 흥미로운 점을 보여준다.
 1.	에곤 실레의 작품에서 등장했던 붉은 열매(꽈리, Physalis)처럼 생긴 꽃이 보인다.
 2.	연한 분홍색 톤, 검은 머리, 정갈한 손은 차분한 느낌을 주지만, 배경의 초록색 자국들은 은근한 불안감을 자아낸다.
