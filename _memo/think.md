@@ -171,7 +171,7 @@ $(S, F)$ 는 Sufficient set $S$를 찾는 것과 알고리즘 $F$를 선택하�
 이해라는 관점에서 LLM이 특정 정보 혹은 (정보와 질문)을 이해했는지 분석해야 한다. 
 LLM은 subsymbolic 표현으로 주어진 정보들을 처리하며, Query 토큰에 대해서 다음 토큰을 생성하는 모델이다. 
 연산과정에서 정보처리 $S$와 알고리즘 $F$는 동시에 진행된다. LLM이 무엇을 이해했다고 말한다면, 이는 정보처리 $S$와 알고리즘 $F$를 통해서 출력 $A$ 혹은 의사결정 $D$ 를 도출할 수 있다는 점을 의미한다. 
-
+    
 Subsymbolic한 방식에 대해서 문제가 되는 것은 sufficient set $S$를 만드는지, 어떤 알고리즘 $F$를 사용하는지 명확하지 않다는데 있다. 
 이는 통계기반 모델의 특징인데, Set에 필요한 정보들은 미리 계산된 amortized 형태로 존재하며, 그들에 대한 추가적인 변형과 조합을 통해서 연산을 하는 것이다. 
 문제는 주어진 context에 대해서 sufficient set 자체를 매번 다르게 만든다는 점이고, 원소들은 symbolic 하기보다 vector형태의 표현들이다. 이로부터 유연적인 연산이 가능하지만, 
@@ -256,6 +256,8 @@ goals (Craik, 1967; Gentner & Stevens, 2014; Johnson-Laird, 1980, 1989; Lake, Ul
 Gershman, 2017; Morgan, 1999; Nersessian et al., 2010).
 </blockquote>
 
+### Research Target 
+
 Cognitive Science에서 적으로는 인간의 뇌가 세계에 대한 모델링을 한다는 가정을 포함한다. 따라서 단순히 알고리즘적인 연산을 넘어서 belief를 포함한다.
 LLM이 Thinking을 한다고 말하기 위해서는 세계에 대한 모델링을 직간접적으로 포함해야 하는 것이다. LLM의 내부에 구현된 알고리즘들이 단지 입-출력의 관점에서 작동하는 것을 넘어서
 세계에 대한 확률적인 것을 포함해야 한다. 이 특별한 F들을 구현하기 위해서는 subsymbolic 적인 표현으로는 부족하며, 이러한 이유로 From words to worlds models에서는 언어에 대한 conversion을 토대로 세계를 생성하고, 추론을 진행한다. 인간의 뇌가 확률을 바탕으로 생각을 하지만, 이를 명시적으로 LLM에 구현하기보다 외적인 형태로 세계를 translate하고, 알고리즘 $F$에 의해서 추론하였다. 그리고, 그 결과를 다시 translate하여 LLM에 집어넣는다. 이러한 방식은 LLM의 subsymbolic한 내부에는 thinking을 위한 알고리즘이 존재하지 않는다는 것을 가정한다. (Thinking을 위한 세계모델은 language를 통해서 구현되었다고 믿는다. )
@@ -272,11 +274,12 @@ LLM이 Thinking을 한다고 말하기 위해서는 세계에 대한 모델링�
 그런 의미에서 from word to worlds models에서는 기능적인 부분에 초점을 맞췄고, 
 subsymbolic이 해결하지 못하는 문제를 외부에서 처리하는 것에 멈췄다는 생각이 든다. 
 
+타겟은 다음과 같다.  
+가정: Symbolic을 다루면서 Amortization은 다른 형태로 변형된다. 
+
 Subsymbolic은 symbolic을 다루면서 어떻게 형성되어야 하며, 
 이 때 필요한 모듈은 무엇이고, 어떻게 인간 수준의 발전을 야기할 수 있는가?  
 
-
-가정: Symbolic을 다루면서 Amortization은 다른 형태로 변형된다. 
 
 ### 학습이라는 것은 무엇인가? (Machine Learning)
 
