@@ -12,7 +12,7 @@ featured: true
 img: assets/img/vienna.png
 title: '[Vienna 1900] <br> 2. 사진으로 담기지 무언가'
 category: 'Vienna 1900'
-description: 'Vien Secession, 생물학과 Ringstrasse'
+description: '내면을 깊이 관찰하고 표현하는 것은 당연한 행위가 아니며, 새로운 시선이 발견되었다.'
 _styles: >
     .table {
         padding-top:200px;
@@ -120,6 +120,80 @@ _styles: >
 
 ---
 
+## Egon Schiele (1890–1918)
+
+비엔나 1900에서 가장 기억에 남는 작가를 꼽으라면, 단연코 에곤 실레를 선택할 것이다. 그의 그림을 처음 마주했을 때, 살구색과 주황색, 검은색이 어우러진 어두운 색채와 짙은 윤곽선이 눈길을 사로잡았다. 그의 작품은 암울한 분위기를 품고 있으면서도, 슬픔 그 자체의 안정감과 존재감을 담고 있다는 점에서 특별했다. 이는 단순히 기쁨이 결여된 상태로서의 슬픔이 아니라, 슬픔이라는 감정이 독립적이고 자족적으로 존재한다는 느낌을 주었다.
+
+
+<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/egon05-autumn-tree-in-stirred-air.png" width="60%" height="auto" class="styled-image"/>
+<figcaption>Egon Schiele, Autumn Tree in Stirred Air (Winter Tree), 1912 <a href="https://onlinecollection.leopoldmuseum.org/en/object/523-autumn-tree-in-stirred-air-winter-tree//">  Image From Leopold Museum  </a> </figcaption>
+<br>
+
+에곤 실레의 자화상은 코코슈카의 작품보다 더 기괴하지만, 자신을 깊이 관찰하려는 노력에서 묘한 인간미가 느껴졌다. 클림트의 아르누보적 곡선과 달리, 실레는 꺾인 선으로 인간의 심리를 표현했다. 그의 선들은 나뭇가지처럼 날카롭고 굴곡져 있으며, 인간 심리의 부드러운 면과 동시에 상처받고 부서진 측면을 드러내는 것처럼 보였다.
+
+
+<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/egon06-the-small-town.png" width="60%" height="auto" class="styled-image"/>
+<figcaption>Egon Schiele, The Small Town III, 1913 <a href="https://onlinecollection.leopoldmuseum.org/en/object/1-the-small-town-iii/">  Image From Leopold Museum  </a> </figcaption>
+<br>
+
+
+한편, 어둠은 인간이 혼자 생활하기엔 지나치게 고독한 공간이다. 내면을 관찰하고 자신을 이해하기 위해 필요한 과정이지만, 고독 속에서 인간은 오래 버티기 어렵다. 실레의 몇몇 그림에서는 그러한 고독 속에서 그의 마음이 의지한 흔적들이 보인다. 그러나 그의 심리적 욕구는 매우 강렬해, 타인과 함께 그려진 장면조차도 실레는 상대에게 관심을 두기보다 자신의 내면 혹은 다른 세계에 집중하고 있는 듯하다.
+
+
+<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/egon04-death-and-man.png" width="60%" height="auto" class="styled-image"/>
+<figcaption>Egon Schiele, Self-Seers II (Death and Man), 1911 <a href="https://onlinecollection.leopoldmuseum.org/en/object/525-self-seers-ii-death-and-man/">  Image From Leopold Museum  </a> </figcaption>
+<br>
+
+에곤 실레의 작품은 인간의 내면을 깊이 탐구하면서도 그 과정에서 느끼는 고독과 갈등을 솔직히 드러낸다. 그의 그림은 단순히 시각적 아름다움을 넘어, 삶과 감정의 복잡한 본질을 사유하게 만든다.
+
+<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/egon03-gustav.png" width="60%" height="auto" class="styled-image"/>
+<figcaption>Egon Schiele, The Hermits (Self-portrait with Gustav Klimt) 1912</figcaption>
+<br>
+
+
+## 내면의 가능성 그리고 한계
+
+
+1900년대 비엔나에서 탄생한 “내면”에 대한 집중은 이러한 새로운 덩어리의 한 예로, 인간의 다양한 면모와 연결되어 우리를 설명하고 이해하도록 돕는 역할을 해왔다.
+
+시선을 다르게 한다는 것은 “다른 존재”의 가능성을 가정하는 것이다. 물론, 대부분의 경우 이러한 가정이 옳은지 그른지를 알 수 없기에 새로운 것을 발견하려는 시도조차 하지 않는 듯하다. 나 역시 그런 경우가 많다. 하지만, 덩어리적 관점에서 볼 때, 세상의 많은 것들은 서로 연결될 수 있으며, 그 과정에서 언어와 같은 상징이 한때 한정했던 시야는 스스로의 오류를 깨닫게 된다.
+
+새로운 시선이 가능한 이유는 인간이 자신의 사고를 스스로 제한하기 때문이다. 우리는 자신의 틀 안에서만 세상을 이해하며, 생을 마감할 때까지 그 틀이 세상의 모든 것을 담아낼 수는 없다. 세상을 인식하는 데 따른 한계와 상징의 한계를 넘어, 존재들은 서로 연결되며 그로부터 떠오르는 다양한 생각들은 표현이라는 형태로 드러난다.
+
+나는 1900년대 비엔나의 시선이나 그 이후의 시선이 단지 인류가 몇 걸음 앞으로 나아간 것에 불과하다고 생각한다. 앞으로 걸어야 할 길, 그리고 가고 싶은 길이 훨씬 많다. 나아가, 나와 사람들에게 중요한 길을 찾고 닦는 것은 예술가의 역할이라고 믿는다.
+
+
+---
+
+## Abstract
+
+
+대상을 하나의 **덩어리**로 인식하고, 이를 다른 존재들과 연결시키는 것은 사고의 기본적인 방식이다.
+덩어리는 단순히 흙을 뭉쳐놓은 것처럼 보일 수 있지만, 그 존재는 집단적이며, 내부의 개체들이 유기적으로 연결되어 있다. 이는 세포처럼 다채롭고, 인류 사회처럼 복잡하다. 하나의 덩어리는 공통된 특징을 가지며, 이러한 특징은 언어로 명확히 정의되기보다는 덩어리 내부 존재들의 관계와 공통된 특징으로 정의된다.
+
+덩어리가 사고의 기본 틀인 이유는, **하나의 덩어리에서 다른 덩어리로 유사성을 비교하거나 변환을 가정할 수 있기 때문이다.** 이 과정에서 특징과 특징이 서로 연결되고, 관계를 맺는다. 만약 두 덩어리가 융합되어, 두 덩어리 내의 개체들이 하나의 새로운 덩어리를 이룬다면, 이는 새로운 특징이 탄생하는 것이다.
+
+새로운 특징의 탄생은 단순히 두 단어를 결합하는 수준을 넘어선다. 예를 들어, “명확한 모호함”이라는 개념을 설명하기 위해 “명확한”과 “모호함”이라는 단어를 사용할 수 있지만, 이를 올바르게 이해하려면 “명확하게 모호한” 덩어리 자체를 바라보아야 한다. 언어는 이러한 관계를 서술하는 도구에 불과하다. 물론 때로는 관계를 명확히 규정하여 덩어리의 특징을 드러낼 수 있다. 하지만 이러한 규정은 “본래 자신들의 특징”으로 정의된 덩어리의 본질을 희석시키기도 한다.
+
+언어로 대상을 규정하는 행위는 탐험을 위해 지도에 표시하는 것과 같다. 인류는 지도를 보고 길을 따라 생각하면 그곳을 방문했다고 생각한다. "명확한 모호함"이라는 두 개의 단어는 대상으로 가는 길을 알려주지만, 내가 마주해야 하는 것은 단어가 지니는 의미를 통해 지도를 탐험하는 것이 아니라 그곳에 놓인 존재들을 바라보는 것이다. 물론 원하면 지도를 통해 다른 곳으로 갈 수 있다. <strong>상징과 상징을 연결하는 작업은 지도를 다채롭게 꾸미는 일이며, 이를 통해 세상을 이해하는 틀을 제공한다. </strong> 그러나 <span style="color: green; font-weight: bold;">가장 중요한 것은 지도 자체가 아니라, 눈앞에 펼쳐진 자연이다. 우리는 상징을 내려놓고, 덩어리 그 자체를 직관적으로 바라볼 수 있어야 한다.</span>  
+
+<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/rothko01-white-center-abstract.webp" width="100%" height="auto"/>
+<figcaption>Mark Rothko, White Center (Abstract), 1950</figcaption>
+<br>
+
+관찰의 목적은 다채롭게 대상을 관찰하는 것이다. 관찰로 부족하다면 새로운 특징을 만들 것이다. 상징과 상징을 연결지어서 하는 게 아닌, 덩어리와 덩어리를 혼합해서 말이다. 
+이후에 우리는 상징을 만들어 그 곳이 어딘지 알려줘야 한다. 
+
+알려줘. 
+
+
+
+
 ## References
 
 Ciatto, Giovanni, et al. "Symbolic knowledge extraction and injection with sub-symbolic predictors: A systematic literature review." ACM Computing Surveys 56.6 (2024): 1-35.
+
+
+
+
+
