@@ -873,6 +873,14 @@ figcaption {
   color: var(--global-text-color-light);
 }
 
+figcaption a {
+  color: var(--global-text-color-light);
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--global-text-color-light);
+}
 
 
 .transform img, figcaption {

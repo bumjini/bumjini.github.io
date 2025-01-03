@@ -126,14 +126,14 @@ _styles: >
 
 
 <img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/egon05-autumn-tree-in-stirred-air.png" width="60%" height="auto" class="styled-image"/>
-<figcaption>Egon Schiele, Autumn Tree in Stirred Air (Winter Tree), 1912 <a href="https://onlinecollection.leopoldmuseum.org/en/object/523-autumn-tree-in-stirred-air-winter-tree//">  Image From Leopold Museum  </a> </figcaption>
+<figcaption>Egon Schiele, Autumn Tree in Stirred Air (Winter Tree), 1912 <br> <a href="https://onlinecollection.leopoldmuseum.org/en/object/523-autumn-tree-in-stirred-air-winter-tree//">  Image From Leopold Museum  </a> </figcaption>
 <br>
 
 에곤 실레의 자화상은 코코슈카의 작품보다 더 기괴하지만, 자신을 깊이 관찰하려는 노력에서 묘한 인간미가 느껴졌다. 클림트의 아르누보적 곡선과 달리, 실레는 꺾인 선으로 인간의 심리를 표현했다. 그의 선들은 나뭇가지처럼 날카롭고 굴곡져 있으며, 인간 심리의 부드러운 면과 동시에 상처받고 부서진 측면을 드러내는 것처럼 보였다.
 
 
 <img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/egon06-the-small-town.png" width="60%" height="auto" class="styled-image"/>
-<figcaption>Egon Schiele, The Small Town III, 1913 <a href="https://onlinecollection.leopoldmuseum.org/en/object/1-the-small-town-iii/">  Image From Leopold Museum  </a> </figcaption>
+<figcaption>Egon Schiele, The Small Town III, 1913 <br> <a href="https://onlinecollection.leopoldmuseum.org/en/object/1-the-small-town-iii/">  Image From Leopold Museum  </a> </figcaption>
 <br>
 
 
@@ -141,7 +141,7 @@ _styles: >
 
 
 <img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/egon04-death-and-man.png" width="60%" height="auto" class="styled-image"/>
-<figcaption>Egon Schiele, Self-Seers II (Death and Man), 1911 <a href="https://onlinecollection.leopoldmuseum.org/en/object/525-self-seers-ii-death-and-man/">  Image From Leopold Museum  </a> </figcaption>
+<figcaption>Egon Schiele, Self-Seers II (Death and Man), 1911 <br> <a href="https://onlinecollection.leopoldmuseum.org/en/object/525-self-seers-ii-death-and-man/">  Image From Leopold Museum  </a>  </figcaption>
 <br>
 
 에곤 실레의 작품은 인간의 내면을 깊이 탐구하면서도 그 과정에서 느끼는 고독과 갈등을 솔직히 드러낸다. 그의 그림은 단순히 시각적 아름다움을 넘어, 삶과 감정의 복잡한 본질을 사유하게 만든다.
