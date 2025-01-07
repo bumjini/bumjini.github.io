@@ -2,7 +2,7 @@
 layout: default
 title: main_projects
 permalink: /articles/
-display_categories: ['Cognitive Science', 'DeepMind', 'AI', ]
+display_categories: ['AI',  'Cognitive Science', 'DeepMind', ]
 ---
 <!-- pages/projects.md -->
 <div class="projects">
