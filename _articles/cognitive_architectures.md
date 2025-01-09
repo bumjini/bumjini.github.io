@@ -48,6 +48,13 @@ _styles: >
 * **Preference**: $\operatorname{Preference}(R_i)$: 규칙에 대한 선호도. 
 * **Solution**: $A^* = \operatorname{Solution}(G_i)$: 해당 목표를 달성하기 위한 행동. 이건 확실하게 추측하기 어렵다. 환경의 복잡성과 행동이 미치는 영향을 정확하게 파악하기 쉽지 않기 때문이다. 
 
+
+### Integration of Symbolic and Subsymbolic 
+
+* Preference는 **규칙(rule)**이나 **행동(action)**에 부여되는 상대적 중요도 또는 선호도를 나타냅니다.
+* Soar의 **결정 주기(Decision Cycle)**에서 활성화된 여러 규칙 중 하나를 선택하기 위해 사용됩니다.
+
+
 ### Processes 
 
 * **Matching Process**: Given a set of matched rules and conditions in working memory, determine the rules that satisfy the conditions. 
