@@ -90,3 +90,14 @@ As I thought about the process of organizing knowledge through parameters, I won
 Looking at DeepSeek-R1’s inference-based learning for reinforcement learning and OpenAI-o3’s deliberate alignment (where the model recalls safety considerations before generating a response), I was better able to envision how an AI model might resist learning new knowledge. This approach, which finds the correct answer by tracing a chain of knowledge, seemed like a reasonable method—assuming the verifier functions properly. However, I couldn’t quite see it as an elegant solution; it felt somewhat precarious in how it handled knowledge.
 
 Looking back, I realize that I still don’t fully understand what happens inside neurons. And perhaps, I was simply viewing the same problem from a different reasoning framework.
+
+
+---
+
+## Reference
+
+[https://assets.anthropic.com/m/24c8d0a3a7d0a1f1/original/Alignment-Faking-in-Large-Language-Models-reviews.pdf](https://assets.anthropic.com/m/24c8d0a3a7d0a1f1/original/Alignment-Faking-in-Large-Language-Models-reviews.pdf)
+
+[https://www.anthropic.com/research/alignment-faking](https://www.anthropic.com/research/alignment-faking)
+
+[https://arxiv.org/abs/2501.17161](https://arxiv.org/abs/2501.17161)
