@@ -36,7 +36,7 @@ _styles: >
 ---
 
 
-# XAI For Reasoning-Based LLMs
+## XAI For Reasoning-Based LLMs
 
 The transition from **SFT** to an **RL-based** learning paradigm in LLMs will open new opportunities for XAI, improving robust reasoning and reducing harmful outputs.
 
@@ -44,7 +44,6 @@ The paradigm of training AI models is shifting from **supervised fine-tuning (SF
 
 I believe this transition may drive advancements in existing explanation methods (e.g., LRP, saliency, decision boundaries, and Shapley values).
 
-## Core Differences in Explanation  
 The key difference lies in the **manifold** used for explanation. Models trained with **SFT** focus on **internal representations**, assuming that amortized neurons encapsulate concepts and circuits dedicated to constructing outputs. Thus, most **mechanistic interpretation** and **XAI methods** have primarily targeted neurons.
 
 In contrast, **LLMs trained with RL**—learning policies for reasoning and decision-making—utilize structured **chain-of-thought** processes (internal tokens or hidden representations). This shift may redefine the target of **explanation**, moving from an input-output approach to a **sequential analysis** of **token interactions**. While sequential input-output cases are more complex, explanations could become clearer as reasoning steps explicitly involve chain-of-thought processes.
@@ -74,3 +73,16 @@ With the success of **DeepSeek-R1**—demonstrating that RL outperforms SFT for 
 Furthermore, LLMs generate a **sequence of thoughts**, resembling **Plato’s theory of recollection**—the idea that **knowledge** is not simply **acquired** but rather **recalled** from **latent structures** within the mind. Similarly, LLMs do not merely **retrieve predefined answers** but **construct reasoning paths**, progressively **revealing knowledge** as if rediscovering it.
 
 With these advancements, LLMs appear to be acquiring more **human-like properties**, reinforcing the idea that they are not just **static models** but **dynamic reasoning agents** capable of structured thought.
+
+
+--- 
+
+# Looking Back on This
+
+I recently realized that AI researchers' perspectives have influenced the interpretation of neurons. Particularly in the context of safety, I struggled to understand how conflicts arise not from a neuron-concept relationship, as I had previously thought, but from differences in learning time. This discrepancy didn’t make much sense from a functional perspective of neurons.
+
+As I thought about the process of organizing knowledge through parameters, I wondered whether neurons were intentionally structured in a way that prior learning could interfere with new guidelines. However, the idea that fine-tuning a model to memorize knowledge could create deliberate resistance to new learning was difficult to imagine. The phenomenon of previously acquired knowledge rejecting new information was something I couldn’t explain purely from a neuronal perspective. At some point, I think I just accepted it as it was. In the end, the real issue seemed to be that we still don’t fully understand how neurons organize knowledge.
+
+Looking at DeepSeek-R1’s inference-based learning for reinforcement learning and OpenAI-o3’s deliberate alignment (where the model recalls safety considerations before generating a response), I was better able to envision how an AI model might resist learning new knowledge. This approach, which finds the correct answer by tracing a chain of knowledge, seemed like a reasonable method—assuming the verifier functions properly. However, I couldn’t quite see it as an elegant solution; it felt somewhat precarious in how it handled knowledge.
+
+Looking back, I realize that I still don’t fully understand what happens inside neurons. And perhaps, I was simply viewing the same problem from a different reasoning framework.
