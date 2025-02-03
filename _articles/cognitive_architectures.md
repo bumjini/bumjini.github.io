@@ -9,7 +9,7 @@ giscus_comments: false
 disqus_comments: false
 date: 2024-12-29
 featured: true
-img: assets/img/cognitive_architecture.png
+img: assets/img/alice03.png
 title: 'Cognitive Architectures'
 category: 'AI'
 description: 'Cognitive Architectures'
@@ -77,3 +77,37 @@ _styles: >
 
 가장 큰 문제는 추상적으로 정보를 저장한다는 것이다. 특정한 상황에서 얻은 기억 정보들은 명확하게 일치하기보다 공통된 특징을 뽑아내서 정의되어야 한다. 이는 추론 과정에서 필요한 path를 저장하는 방식과 유사하다. 즉, 규칙이라는 것은 특정 대상에서 다른 대상으로 가는 것이고 이 때, 대상은 상태, 정보, 목표 등을 범용적이고 추상적이며 포괄적으로 저장한다. 
 따라서, 정보의 사용은 대단히 모호하기에 condition이 일치하는지, 어떻게 행동을 구현해야 하는지 모호성을 지니고 있다. 
+
+
+## CLARION 
+
+
+ 
+ Key terms in this architecture
+ 
+| **Keyword**                     | **Meaning**                                                                                              |
+|----------------------------------|----------------------------------------------------------------------------------------------------------|
+| Metacognitive Interaction        | The interaction involving metacognition, which includes monitoring, controlling, and regulating one's own cognitive processes. |
+| Functional Systems               | Systems in cognitive architecture designed for specific roles or functionalities, such as action, motivation, or knowledge storage. |
+| Implicit-Explicit Interaction    | The interaction between implicit (unconscious, automatic) and explicit (conscious, deliberate) processes. |
+| Cognitive-Motivational Interaction | The interaction between cognitive processes (thinking, learning) and motivational drives (needs, goals). |
+| Action-Centered Subsystem (ACS)  | A subsystem focused on controlling actions, including physical movements and mental operations.         |
+| Non–Action-Centered Subsystem (NACS) | A subsystem for maintaining general, non-action-centered knowledge, enabling reasoning and inference.    |
+| Motivational Subsystem (MS)      | A subsystem managing drives and motivations, influencing actions and goal-setting.                      |
+| Metacognitive Subsystem (MCS)    | A subsystem overseeing cognitive processes, including monitoring and adapting strategies for better performance. |
+| Implicit Knowledge               | Knowledge acquired unconsciously, often represented in distributed or subsymbolic formats.              |
+| Explicit Knowledge               | Knowledge that is consciously accessible and can be expressed symbolically or in language.              |
+| Bottom-Up Learning               | Learning that builds from implicit, experiential knowledge to explicit, structured knowledge.           |
+| Top-Down Learning                | Learning where explicit knowledge influences and guides the acquisition of implicit knowledge.          |
+| Dual Representational Structure  | The use of both implicit and explicit representations in cognitive subsystems.                          |
+| Reinforcement Learning           | A method of learning through trial and error by receiving rewards or penalties for actions.             |
+| Q-Learning                       | A type of reinforcement learning algorithm used to estimate the value of actions in given states.        |
+| Associative Rules                | Explicit rules in the form of associations, used for reasoning in the non–action-centered subsystem.     |
+| Similarity-Based Reasoning       | Reasoning based on comparing new information with existing knowledge to find similarities.              |
+| Drive                            | An innate or learned motivation guiding behavior, such as hunger, thirst, or curiosity.                 |
+| Rational Reconstruction          | The process of extracting explicit knowledge from accumulated implicit knowledge.                       |
+| Rule-Extraction-Refinement (RER) | A method for generating explicit rules from successful actions and refining them based on outcomes.     |
+| Distributed Representation       | A type of representation where information is spread across a network, often used for implicit knowledge.|
+| Localist Representation          | A type of representation where information is localized to specific nodes, often used for explicit knowledge.|
+| Base-Level Activation            | A priming mechanism where activation levels fade over time, used to simulate memory processes.          |
+| Cognitive Realism                | The use of detailed, realistic cognitive processes and mechanisms in modeling and simulations.          |
