@@ -35,6 +35,10 @@ _styles: >
 
 ---
 
+<img src="/assets/img/alice02.png" width="70%" height="auto" class="styled-image"/>
+
+
+
 
 ## XAI For Reasoning-Based LLMs
 
