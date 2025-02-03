@@ -7,7 +7,7 @@ authors:
 bibliography: all.bib
 giscus_comments: false
 disqus_comments: false
-date: 2024-12-29
+date: 2025-02-03
 featured: true
 img: assets/img/alice03.png
 title: 'Cognitive Architectures'
