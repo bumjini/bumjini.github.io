@@ -16,7 +16,7 @@ description: 'Expert System'
 _styles: >
     .table {
         padding-top:200px;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.5rem
         border-bottom: 2px;
     }
     .p {
@@ -38,6 +38,8 @@ _styles: >
         font-family: 'Times New Roman', Times, serif;
     }
 ---
+
+<img src="/assets/img/feigenbaum.png" width="80%" height="auto" class="styled-image"/>
 
 I read Luger’s book (Luger, 2021) on expert systems and discovered a way to model the CALM architecture using an expert system. This knowledge-based approach is essential for ongoing research involving expert systems.  
 
