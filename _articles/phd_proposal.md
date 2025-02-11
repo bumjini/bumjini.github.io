@@ -48,7 +48,7 @@ _styles: >
 <img src="/assets/img/phd_essay1.jpeg" width="80%" height="auto" class="styled-image"/>
 
 
-> 이 글은 ChatGPT로 저의 [PhD Proposal](https://1drv.ms/b/c/ae042a624064f8ca/EVrPSO_rgSpOoyd_4wZ6iqYBayvpz2xXfPnSf0Y7cgAgRw?e=Vz0MWx) 을 요약한 것 입니다. 
+> 이 글은 ChatGPT로 저의 [PhD Proposal](https://1drv.ms/b/c/ae042a624064f8ca/EVrPSO_rgSpOoyd_4wZ6iqYBayvpz2xXfPnSf0Y7cgAgRw) 을 요약한 것 입니다. 
 
 # 인공지능과 인간 사고의 접점: 인지 아키텍처와 대형 언어 모델의 융합
 
