@@ -10,9 +10,9 @@ disqus_comments: false
 date: 2025-02-06
 featured: true
 img: assets/img/phd_essay1.jpeg
-title: 'PhD Essay: Finding What Cannot Be Achieved by Moore’s Law'
+title: 'PhD Proposal: Cognitive Architecture for Large Language Models'
 category: 'AI'
-description: 'PhD Essay: Finding What Cannot Be Achieved by Moore’s Law'
+description: 'PhD Proposal: Cognitive Architecture for Large Language Models'
 _styles: >
     .table {
         padding-top:200px;
