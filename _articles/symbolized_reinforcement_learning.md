@@ -7,7 +7,7 @@ authors:
 bibliography: all.bib
 giscus_comments: false
 disqus_comments: false
-date: 2025-02-03
+date: 2025-02-27
 featured: true
 img: assets/img/symbolized_reinforcement_learning.png
 title: 'Symbol Reinforcement Learning'
