@@ -38,7 +38,7 @@ _styles: >
 
 
 
-As YeanJea stated, the most important component of learning is communication between agents. Consider a scenario where two agents need to communicate; they must establish a protocol with rules to indicate items in their world. For example, when bees discover a food source, they use a “waggle dance” to communicate its direction and distance to their hive members. Similarly, dolphins use a system of signature whistles to identify themselves and interact with others.
+As Yeonjea stated, the most important component of learning is communication between agents. Consider a scenario where two agents need to communicate; they must establish a protocol with rules to indicate items in their world. For example, when bees discover a food source, they use a “waggle dance” to communicate its direction and distance to their hive members. Similarly, dolphins use a system of signature whistles to identify themselves and interact with others.
 
 Various animals communicate through protocols developed over long evolutionary histories. For example, whales use complex song patterns and low-frequency sounds to convey messages over long distances, while monkeys employ specific gestures and vocalizations to warn of predators or signal social intentions. Research on vervet monkeys has shown that they use distinct alarm calls for different types of predators—one for leopards, another for eagles, and yet another for snakes—indicating a form of symbolic communication.
 
