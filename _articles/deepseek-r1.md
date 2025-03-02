@@ -11,7 +11,7 @@ date: 2025-02-03
 featured: true
 img: assets/img/alice02.png
 title: 'Thoughts on DeepSeek-R1'
-category: 'AI'
+category: 'Research Life'
 description: 'What I think about DeepSeek-R1 (Reasoning-based LLMs)'
 _styles: >
     .table {

@@ -11,7 +11,7 @@ date: 2025-02-06
 featured: true
 img: assets/img/phd_essay1.jpeg
 title: 'PhD Essay: Finding What Cannot Be Achieved by Moore’s Law'
-category: 'AI'
+category: 'Research Life'
 description: 'PhD Essay: Finding What Cannot Be Achieved by Moore’s Law'
 _styles: >
     .table {

@@ -11,7 +11,7 @@ date: 2024-12-28
 featured: true
 img: assets/img/alice01.png
 title: '[표현력] Why does Transformer Architecture succeed?'
-category: 'AI'
+category: 'Research Life'
 description: 'Discussion on why Transformer Architecture succeeds based on symbolic and subsymbolic representations'
 _styles: >
     .table {
