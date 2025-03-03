@@ -36,7 +36,7 @@ After reading, Poole 2008, Agent, Decision, Belifes, Preferences, Science, and P
 
 <img src="/assets/img/agents.png" width="50%" height="auto" class="styled-image"/>
 
-[Image Credit: Alice](https://www.instagram.com/aliceeggie)
+[Image Credit: Alice Eggie](https://www.instagram.com/aliceeggie)
 
 # Theory-Based Agent
 
