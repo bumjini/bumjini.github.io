@@ -74,6 +74,24 @@ I work at the intersection of **Cognitive Science** and **Artificial Intelligenc
 
 My goal is to **uncover the General Principles of Mind** that govern both **human and artificial intelligence**, fostering a deeper understanding of cognition through **philosophical and scientific research**.
 <br>
+<br>
+
+---
+
+## 🎓 Education
+
+#### Ph.D. Student in Artificial Intelligence (09/2023 – Present)
+- Korea Advanced Institute of Science and Technology (**KAIST**), AI Graduate School
+
+- Proposal: Integrating Cognitive Architectures into Large Language Models [📂 Drive](https://1drv.ms/b/c/ae042a624064f8ca/EXbZ7D5yKjdOonSmwpe_60IBYzLog03lXGdDhi6Fy6WUhg?e=z6FWzK)
+
+#### M.S. in Artificial Intelligence (08/2023)
+- Korea Advanced Institute of Science and Technology (**KAIST**), AI Graduate School (GPA: 4.17/4.3) 
+- Thesis: Partitioned Channel Gradient for Reliable Saliency Map in Image Classification [📂 Drive](https://1drv.ms/b/c/ae042a624064f8ca/EWrkp660zT1BuTF8JjPcSa4B6IWTS5NT6V_URVY-WOKzgg?e=Y4GPkz)
+
+#### B.S. in Mathematics (08/2020)
+- Chung-Ang University, Korea
+- Double Major in Software Engineering, (GPA: 4.39/4.5)  
 
 ---
 
