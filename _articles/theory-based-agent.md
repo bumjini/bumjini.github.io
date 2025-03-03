@@ -36,6 +36,8 @@ After reading, Poole 2008, Agent, Decision, Belifes, Preferences, Science, and P
 
 <img src="/assets/img/agents.png" width="50%" height="auto" class="styled-image"/>
 
+[Image Credit: Alice](https://www.instagram.com/aliceeggie)
+
 # Theory-Based Agent
 
 When analyzing an agent, three key aspects must be distinguished: **capability**, **belief**, and **preference**.  **Capability** refers to whether an agent can perform a given task. This is determined by factors such as sufficient training and the robustness of the model against test cases.   **Belief**, on the other hand, includes assumptions about actions. A **theory** operates based on specific assumptions, focusing not just on whether something can be done but on how it is done. While theory influences success, making it intertwined with capability, it emphasizes that an agent acts based on assumptions rather than pure ability.   Lastly, **preference** indicates what the agent *wants* to do. Preferences exist because predictions about the future are inherently uncertain or because the agent has personal objectives that shape its choices.  
