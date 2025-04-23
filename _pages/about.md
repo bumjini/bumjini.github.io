@@ -117,7 +117,6 @@ My goal is to **uncover the General Principles of Mind** that govern both **huma
 
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=XzIXaxoAAAAJ&hl=ko) **Google Scholar** – Research publications and citations.
 
-
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/bumjini/) **Instagram** – A glimpse into my daily life.  
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@bumjini) **YouTube** – Sharing insights on AI and cognition.  
@@ -125,6 +124,13 @@ My goal is to **uncover the General Principles of Mind** that govern both **huma
 [![Brunch](https://img.shields.io/badge/Brunch-000000?style=flat&logo=brunch&logoColor=white)](https://brunch.co.kr/@bumjini) **Brunch** – Writing about AI, science, and philosophy.  
 
 ---
+
+## Items 
+
+- [Reading List](/papers)
+
+---
+
 
 <br>
 <br>

@@ -593,119 +593,177 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+  
   h1 {
     color: var(--global-theme-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
   }
-  h2 {
-    margin-bottom: 1rem;
-    span {
-      font-size: 1.5rem;
+  
+  .paper-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .paper-item {
+    width: 100%;
+    height: auto;
+  }
+  
+  .paper-card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: auto;
+    min-height: 120px;
+    cursor: pointer;
+    position: relative;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      min-height: auto;
     }
   }
-  h2.year {
-    color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
-    margin-bottom: -2rem;
-    text-align: right;
+  
+  .paper-image {
+    flex: 0 0 250px;
+    margin: 0 auto;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    @media (max-width: 768px) {
+      flex: 0 0 auto;
+      height: 180px;
+    }
   }
-  ol.bibliography {
-    list-style: none;
-    padding: 0;
+  
+  .paper-content {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .paper-title {
     margin-top: 0;
-
-    li {
-      margin-bottom: 1rem;
-      .abbr {
-        height: 2rem;
-        margin-bottom: 0.5rem;
-        abbr {
-          display: inline-block;
-          background-color: var(--global-theme-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          a {
-            color: white;
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-        .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
-        }
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    text-align: center;
+    
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      font-size: 1.2rem;
+      
+      &:hover {
+        color: var(--global-theme-color);
       }
-      .title {
-        font-weight: 550;
-        // font-family: cursive;
+    }
+  }
+  
+  .paper-authors {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: var(--global-text-color);
+    text-align: center;
+  }
+  
+  .paper-venue {
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    color: var(--global-text-color-light);
+    text-align: center;
+  }
+  
+  .paper-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .paper-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  .paper-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  
+  .paper-link {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    
+    &.pdf {
+      background: linear-gradient(135deg, #ff9a9e 0%, #f14667 100%);
+      color: white;
+      
+      &:hover {
+        box-shadow: 0 4px 8px rgba(241, 70, 103, 0.4);
+        transform: translateY(-2px);
       }
-      .author {
-        a {
-          border-bottom: 1px dashed var(--global-theme-color);
-          &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
-          }
-        }
-        > em {
-          border-bottom: 1px solid;
-          font-style: normal;
-        }
+    }
+    
+    &.code {
+      background: linear-gradient(135deg, #90caf9 0%, #2196f3 100%);
+      color: white;
+      
+      &:hover {
+        box-shadow: 0 4px 8px rgba(33, 150, 243, 0.4);
+        transform: translateY(-2px);
       }
-      .links {
-        a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
-          }
-        }
-      }
-      .hidden {
-        font-size: 0.875rem;
-        max-height: 0px;
-        overflow: hidden;
-        text-align: justify;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
-
-        p {
-          line-height: 160%;
-          margin: 10px;
-        }
-        pre {
-          font-size: 1em;
-          line-height: 1.4em;
-          padding: 10px;
-        }
-      }
-      .hidden.open {
-        max-height: 100em;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
-      }
-      div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
-      }
-      div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+    }
+    
+    &.github {
+      background: linear-gradient(135deg, #616161 0%, #212121 100%);
+      color: white;
+      padding: 0.5rem 0.8rem;
+      
+      &:hover {
+        box-shadow: 0 4px 8px rgba(33, 33, 33, 0.4);
+        transform: translateY(-2px);
       }
     }
   }

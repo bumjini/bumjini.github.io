@@ -50,6 +50,16 @@
                 </a>
               </li>
 
+              <li style="font-size: 17px" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/papers/' | relative_url }}"> Reading List
+                  {%- if page.title == "papers" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+
+              
+
               {%- endif %}
 
               <!-- Other pages -->
@@ -94,6 +104,13 @@
                 </a>
               </div> -->
               {%- endif %}
+              
+              <!-- Search Icon -->
+              <li style="font-size: 17px" class="nav-item">
+                <a class="nav-link" href="{{ '/search/' | relative_url }}">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

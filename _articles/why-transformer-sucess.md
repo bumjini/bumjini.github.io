@@ -37,7 +37,7 @@ _styles: >
 
 ---
 
-
+<span class="tag-box hidden">Hidden</span> 
 
 <img src="/assets/img/alice01.png" width="1024" height="auto" class="styled-image" />
 
