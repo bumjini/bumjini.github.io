@@ -25,4 +25,19 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 |  | LEANAGENT: Lifelong Learning From Formal Theorem Proving | 2025 | 
 | | Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs | 2025 |
 | | Generative agent-based modeling with actions grounded in physical, social, or digital space using Concordia | 2023 |
- 
+| IJCAI | Transformers as Soft Reasoners over Language | 2020 | | 
+| ICLR | Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks |  2016  | 
+| NeurIPS | Interpret Your Decision: Logical Reasoning Regularization for Generalization in Visual Classification | 2024 | 
+| EMNLP | CLUTRR: A Diagnostic Benchmark for Inductive Reasoning from Text | 2019
+| |  Adaptable Logical Control for Large Language Models | 2024 | 
+| NeurIPS  | A Foundation Model for Zero-shot Logical Query Reasoning | 2024 | 
+| Tennenbaum | Hybrid Declarative-Imperative Representations for Hybrid Discrete-Continuous Decision-Making | 2024
+| <span class="tag-box mechanistic"> | Enhancing Automated Interpretability with Output-Centric Feature Descriptions | 2025 | 
+|  ACL | Evaluating the Ripple Effects of Knowledge Editing in Language Models | 2025 | 
+|      | Gradient Cuff: Detecting Jailbreak Attacks on Large Language Models by Exploring Refusal Loss Landscapes | 2024
+|      | SMOOTHLLM: Defending Large Language Models Against Jailbreaking Attacks | 2024 | 
+| ICLR | Visualizing and Understanding Recurrent Networks | 2016 | 
+| |  Building Machines That Learn and Think Like People |  2016 | 
+| NeurIPS | UKnow: A Unified Knowledge Protocol with Multimodal Knowledge Graph Datasets for Reasoning and Vision-Language Pre-Training | 2024
+| NeurIPS | AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents | 2024
+|         | Rethinking the Role of Demonstrations: What Makes In-Context LearningWork? | 2022

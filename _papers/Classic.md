@@ -12,3 +12,5 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | poole | A Logical Framework for Default Reasoning | 1998 | 
 | Etherington | Formalizing Nonmonotonic Reasoning  Systems | 1955 |
 | Kleer | An Assumption-based TMS | 1986 | 
+| McCarthy | Applications of Circumscription to Formalizing Common-Sense Knowledge | 1986`
+| Lifschitz | What Is Answer Set Programming? | 2008 |
