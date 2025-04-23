@@ -28,4 +28,5 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | ICLR | Prompting GPT-3 to be reliable. | 2023 | 
 |  | Just ask for calibration: Strategies for eliciting calibrated confidence scores from language models fine-tuned with human feedback. |  2023| 
 | Nature | Detecting hallucinations in large language models using semantic entropy | 2024 | 
-
+| ACL | Calibrating the Confidence of Large Language Models by Eliciting Fidelity | 2024 | 
+| ACL | Fact-Level Confidence Calibration: Empowering Confidence-Guided LLM Self-Correction  | 2024 | 
