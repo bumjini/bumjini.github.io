@@ -11,3 +11,4 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | Tag | Title | Year | URL | 
 |---| -----| ----| ----|
 |   |  AI 2027 | 2025 | [ai-2027.com](https://ai-2027.com/)
+|   | Language models can explain neurons in language models. | | 

@@ -5,9 +5,7 @@ permalink: /papers/
 description: 
 ---
 
-<div class="publications" style="margin-bottom: 150px;">
-  <p style="margin-bottom: 20px;"></p>
-  
+<div class="publications">
   <div class="paper-grid">
     {%- assign sorted_papers = site.papers | sort: "date" | reverse -%}
     
@@ -58,66 +56,61 @@ description:
   .paper-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
-    grid-auto-flow: dense;
     gap: 20px;
     margin-top: 40px;
-    background-color:rgb(255, 255, 255);
+    background-color: transparent;
     padding: 20px;
     border-radius: 10px;
   }
   
-  /* Vertical spans pattern for 3-column layout */
-  .paper-item:nth-child(9n) {
-    grid-column: span 1;
-    grid-row: span 2;
+  .paper-item {
+    min-height: 200px;
+    display: flex;
   }
   
-  .paper-item:nth-child(9n+4) {
-    grid-column: span 1;
-    grid-row: span 2;
+  .paper-card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
   }
   
   .paper-card {
-    border-radius: 0;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: none;
     height: 100%;
     width: 100%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent !important;
   }
   
   .paper-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
   }
   
   .paper-image {
-    height: 100%;
     width: 100%;
+    height: 100%;
     position: relative;
-    overflow: hidden;
-    mask-image: radial-gradient(circle, black 90%, transparent 100%);
-    -webkit-mask-image: radial-gradient(circle, black 90%, transparent 100%);
-  }
-  
-  .paper-image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 20px 10px #f9f9f9;
-    pointer-events: none;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .paper-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     transition: transform 0.5s ease;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.05));
   }
   
   .paper-card:hover .paper-image img {
@@ -174,25 +167,25 @@ description:
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Randomize the order of paper items to create visual interest
     const container = document.querySelector('.paper-grid');
     const items = Array.from(container.querySelectorAll('.paper-item'));
     
-    // Randomize the sizes a bit to create more visual interest
-    items.forEach((item, index) => {
-      // Apply different rotation angles for a scattered look
-      const randomAngle = (Math.random() * 4 - 2) + 'deg';
-      item.querySelector('.paper-card').style.transform = `rotate(${randomAngle})`;
+    // Apply subtle rotation for visual interest
+    items.forEach((item) => {
+      const randomAngle = (Math.random() * 2 - 1) + 'deg';
+      const card = item.querySelector('.paper-card');
       
-      // On hover, straighten the card
-      item.querySelector('.paper-card').addEventListener('mouseenter', () => {
-        item.querySelector('.paper-card').style.transform = 'translateY(-5px) rotate(0deg)';
-      });
-      
-      // On mouse leave, return to original rotation
-      item.querySelector('.paper-card').addEventListener('mouseleave', () => {
-        item.querySelector('.paper-card').style.transform = `rotate(${randomAngle})`;
-      });
+      if (card) {
+        card.style.transform = `rotate(${randomAngle})`;
+        
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'translateY(-5px) rotate(0deg)';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = `rotate(${randomAngle})`;
+        });
+      }
     });
   });
 </script>
