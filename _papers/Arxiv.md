@@ -40,4 +40,5 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | |  Building Machines That Learn and Think Like People |  2016 | 
 | NeurIPS | UKnow: A Unified Knowledge Protocol with Multimodal Knowledge Graph Datasets for Reasoning and Vision-Language Pre-Training | 2024
 | NeurIPS | AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents | 2024
-|         | Rethinking the Role of Demonstrations: What Makes In-Context LearningWork? | 2022
+|         | Rethinking the Role of Demonstrations: What Makes In-Context LearningWork? | 2022 
+|         | Understanding Epistemic Language with a Language-augmented Bayesian Theory of Mind |  2024
