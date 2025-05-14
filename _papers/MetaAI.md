@@ -14,3 +14,4 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | <span class="tag-box vlm">VLM</span> | PerceptionLM: Open-Access Data and Models for Detailed Visual Understanding |  2025 | [url](https://ai.meta.com/research/publications/perceptionlm-open-access-data-and-models-for-detailed-visual-understanding/) | 
 | | Improving the Scaling Laws of Synthetic Data with Deliberate Practice |  2025 |  | 
 |  | Mission Impossible: A Statistical Perspective on Jailbreaking LLMs  | 2024 | 
+|  | Multi-Token Attention | 2025 | 

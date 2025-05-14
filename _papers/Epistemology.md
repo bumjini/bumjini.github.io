@@ -18,3 +18,5 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | Binz, Cognition | Turning large language models into cognitive models. | 2023 | 
 | Strachan, Cognition, Nature | Testing theory of mind in large language models and humans. | 2024| 
 | Piantadosi | Meaning without reference in large language models. | 2022 | 
+| |  Do Models Explain Themselves? Counterfactual Simulatability of Natural Language Explanations  |  2023 
+| Philosophical | Can Large Language Models Act as Symbolic Reasoners? | 2024 

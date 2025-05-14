@@ -42,3 +42,10 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | NeurIPS | AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents | 2024
 |         | Rethinking the Role of Demonstrations: What Makes In-Context LearningWork? | 2022 
 |         | Understanding Epistemic Language with a Language-augmented Bayesian Theory of Mind |  2024
+| Nature| The effect of ChatGPT on students’ learning performance, learning perception, and higher-order thinking: insights from a meta-analysis | 2025 
+|NACCL | Identifying and Mitigating Social Bias Knowledge in Language Models | 2025
+| NACCL | OctoTools: An Agentic Framework with Extensible Tools for Complex Reasoning | 2025 
+| ICML  | ConceptAttention: Diffusion Transformers Learn Highly Interpretable Features | 2025 
+| ICML  | Which Agent Causes Task Failures and When? OnAutomated Failure Attribution of LLM Multi-Agent Systems | 2025 |
+| Nature | Assessing and alleviating state anxiety in large language models | 2025
+
