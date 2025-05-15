@@ -129,8 +129,12 @@ collections:
   memo:
     output: true
     permalink: /memo/:path/
-
-
+  research:
+    output: true
+    permalink: /research/:path/
+  study:
+    output: true
+    permalink: /study/:path/
 
 news_limit: 10000
 
