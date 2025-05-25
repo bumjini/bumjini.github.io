@@ -4,6 +4,46 @@
 
 // Typography
 
+@font-face {
+  font-family: 'Pretendard';
+  src: url('assets/fonts/Pretendard-Regular.woff2') format('woff2'),
+       url('assets/fonts/Pretendard-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('assets/fonts/Pretendard-Bold.woff2') format('woff2'),
+       url('assets/fonts/Pretendard-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('assets/fonts/Pretendard-Medium.woff2') format('woff2'),
+       url('assets/fonts/Pretendard-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard-Black';
+  src: url('assets/fonts/Pretendard-Black.woff2') format('woff2'),
+       url('assets/fonts/Pretendard-Black.woff') format('woff');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url('../assets/fonts/Pretendard-ExtraBold.woff2') format('woff2'),
+       url('../assets/fonts/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 900;
+}
 
 h1{
   margin-top: 1.0rem;
@@ -45,6 +85,7 @@ h1, h2, h3,  h4, h5, h6{
 
 h1, h2, h3, h4, h5, h6, strong, div{
   color: var(--global-text-color);
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   // font-family:'Open Sans', sans-serif; ;
   // font-weight: 400;
   // font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
@@ -53,7 +94,7 @@ h1, h2, h3, h4, h5, h6, strong, div{
  li, ul{
   color: var(--global-text-color);
   font-size: var(--global-text-size);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   line-height: 140%;
   margin-top:10px;
   margin-bottom:10px;
@@ -63,7 +104,7 @@ h1, h2, h3, h4, h5, h6, strong, div{
 strong{
   font-weight:720;
   font-size: var(--global-text-size);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 
   // font-family: 'Open Sans', sans-serif; ;
   // font-family:  "Cambria, Georgia, serif"; //"Roboto", Helvetica, Arial, sans-serif;
@@ -77,7 +118,7 @@ span {
 
 }
 p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   color: var(--global-text-color);
   line-height: 160%;
   font-weight: 420;
@@ -222,7 +263,7 @@ blockquote {
   
   img {
     width: 100%;
-    height: 200px;
+    height: 30px;
     object-fit: cover;
     object-position: top;
   }
@@ -525,38 +566,21 @@ footer.sticky-bottom {
 .projects {
   a {
     text-decoration: none;
-
-    &:hover {
-      .card-title {
-        color: var(--global-theme-color);
-      }
-    }
   }
 
   .card {
     .card-title {
-      height: 48px;           // 고정 높이 설정
+      height: 50px;           // 고정 높이 설정
       overflow: hidden;       // 넘치는 텍스트 숨김
       text-overflow: ellipsis; // 넘치는 텍스트를 ...으로 표시
       display: -webkit-box;
       -webkit-line-clamp: 2;  // 최대 2줄까지 표시
       -webkit-box-orient: vertical;
-      transition: all 0.2s ease;
-      
-      &:hover {
-        overflow: visible;
-        position: relative;
-        z-index: 2;
-        background-color: var(--global-card-bg-color); // 배경색 추가
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);        // 그림자 효과
-        padding: 4px;                                  // 여백 추가
-        border-radius: 4px;                           // 모서리 둥글게
-      }
     }
 
     img {
       width: 100%;
-      height: 200px;
+      height: 100px;
       object-fit: cover;
       object-position: top;
     }
@@ -573,17 +597,17 @@ footer.sticky-bottom {
   }
 
   .grid-sizer, .grid-item {
-    width: 250px;
+    // width: 250px;
     margin-bottom: 10px;
   }
 
   h2.category {
-    color: #5d5d5d;
-    border-bottom: 3px solid var(--global-divider-color);
+    color: #000000;
+    border-bottom: 3px solid #000000;
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    text-align: right;
+    text-align: left;
     font-family: 'Times New Roman', Times, serif;
   }
 }
@@ -770,9 +794,6 @@ footer.sticky-bottom {
 }
 
 // Rouge Color Customization
-figure.highlight {
-  margin: 0 0 1rem;
-}
 
 pre {
   color: #090400;

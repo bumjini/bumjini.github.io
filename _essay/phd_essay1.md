@@ -1,14 +1,11 @@
 ---
 layout: distill
-authors: 
-    - name: Bumjin Park
-      affiliations:
-        name: KAIST
 bibliography: all.bib
 giscus_comments: false
 disqus_comments: false
 date: 2025-02-06
 featured: true
+background_color: rgb(255, 231, 214)
 img: assets/img/phd_essay1.jpeg
 title: 'PhD Essay: Finding What Cannot Be Achieved by Moore’s Law'
 category: 'Research Life'

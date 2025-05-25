@@ -1,16 +1,12 @@
 ---
 layout: distill
-authors: 
-    - name: Bumjin Park
-      affiliations:
-        name: KAIST
 bibliography: all.bib
 giscus_comments: false
 disqus_comments: false
 date: 2025-03-02
 featured: true
 img: assets/img/modeling_love.jpeg
-title: 'Modeling Love<br>(Emotion Machine)'
+title: 'Modeling Love (Emotion Machine)'
 category: 'AI'
 description: 'Mechanistic Approaches on Modeling Love, Emotion.'
 _styles: >

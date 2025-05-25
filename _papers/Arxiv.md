@@ -48,3 +48,5 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | ICML  | ConceptAttention: Diffusion Transformers Learn Highly Interpretable Features | 2025 
 | ICML  | Which Agent Causes Task Failures and When? OnAutomated Failure Attribution of LLM Multi-Agent Systems | 2025 |
 | Nature | Assessing and alleviating state anxiety in large language models | 2025
+| | Language Models use Lookbacks to Track Beliefs| 2025|
+| Tenenbaum | Theories of Mind as Languages of Thought for Thought about Thought | 2025 | 

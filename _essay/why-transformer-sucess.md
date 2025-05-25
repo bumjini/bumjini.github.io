@@ -1,16 +1,12 @@
 ---
 layout: distill
-authors: 
-    - name: Bumjin Park
-      affiliations:
-        name: KAIST
 bibliography: all.bib
 giscus_comments: false
 disqus_comments: false
 date: 2024-12-28
 featured: true
 img: assets/img/alice01.png
-title: '[표현력] Why does Transformer Architecture succeed?'
+title: '[Kr] Why does Transformer Architecture succeed?'
 category: 'Research Life'
 description: 'Discussion on why Transformer Architecture succeeds based on symbolic and subsymbolic representations'
 _styles: >

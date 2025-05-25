@@ -1,3 +1,6 @@
+// Masonry is not needed since we're using CSS Grid
+// This file can be safely removed
+
 $(document).ready(function() {
   // Init Masonry
   var $grid = $('.grid').masonry({

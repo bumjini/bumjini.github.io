@@ -1,9 +1,5 @@
 ---
 layout: distill
-authors: 
-    - name: Bumjin Park
-      affiliations:
-        name: KAIST
 bibliography: all.bib
 giscus_comments: false
 disqus_comments: false

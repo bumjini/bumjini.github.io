@@ -1,7 +1,6 @@
 <!-- {%- assign path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%} -->
 {%- assign path = include.path -%}
 
-<figure>
 
   <picture>
     <source srcset="{{ path | relative_url }}" />
@@ -13,4 +12,3 @@
 
   {%- if include.caption -%}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}
 
-</figure>
