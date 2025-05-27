@@ -50,3 +50,4 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | Nature | Assessing and alleviating state anxiety in large language models | 2025
 | | Language Models use Lookbacks to Track Beliefs| 2025|
 | Tenenbaum | Theories of Mind as Languages of Thought for Thought about Thought | 2025 | 
+| | An Affective-Taxis Hypothesis for Alignment and Interpretability| 2025 | 
