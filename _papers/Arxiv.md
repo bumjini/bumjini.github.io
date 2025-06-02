@@ -51,3 +51,33 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | | Language Models use Lookbacks to Track Beliefs| 2025|
 | Tenenbaum | Theories of Mind as Languages of Thought for Thought about Thought | 2025 | 
 | | An Affective-Taxis Hypothesis for Alignment and Interpretability| 2025 | 
+| Bouyamourn | Why LLMs Hallunicate, And Hwo To get Evidential Closure |  2023 | 
+| Yin | Do Large Language Models Know What They Don't Know? | 2023 |
+| Anthropic | Auditing Language Models For hidden Objectives |  2025 | 
+| Distinguishing the Knowable from the Unknowable with Language Models | 2024 | 
+| ICLR 2025 | Retrieval Head Mechanistically explains long-context factuality | 2025 | 
+| ICLR | DeDeep: Detecting hallucinations in retrieval-augmented generation via mechanstic interpretability | 2025 | 
+| ICLR |  Mechanistic Permutability: Match Features Across Layers | 2025 | 
+| NeurIPS 2024 | Transcoders Find Interpretable LLM Feature Circuits | 2024 | 
+| ICLR 2025 | Sparse feature circuits: Discovering and editing interpretable causal graphs in langauge models | 2025|  
+| NeurIPS |  Confidence regulation neurons in language models | 2024 | 
+| ICML 2024 | Experts Don't Cheat: Learning What you don't know by predicting pairs | 2024 | 
+| | Internal consistency and self-feedback in large language models: A survey | 2024 
+| EMNLP | The Internal state of an LLM Knows When it's lying | 2023 | 
+| | Self-training large language models though knowledge detection | 2024 
+|  |  Knowning what LLMs do not know: a simple yet effective self-detection method | 2024 |
+| | Program-Aided Reasoners Know What They Know | 2024 | 
+| | A survey on Verification and Validation | 2024 
+| ICLR | Making retrieval-augmented language models robust to irrelevant context | 2024 |
+| AAAI | Combating misinformation in the age of LLMS | 2024 | 
+|  | DRAGIN: dynamic retrieval augmented Generation based on the Information Needs of LLMs |  2024
+|  | RARR: Researching and Revising What Language Models say, using language models | 2023 | 
+| Joy Doyle  | A truth maintanance system | 1979 | 
+|Minsky | Jokes and the Logic of the Cognitive Unconscious | 1980 
+| | SAEs are Good for Steering - If You select the Right Features | 2025 | 
+| |  Improved Representation Steering for Language Models | 2025 | 
+| | AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders | 2025 | 
+
+
+
+
