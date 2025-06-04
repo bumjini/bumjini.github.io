@@ -23,3 +23,4 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | Tenenbaum | From word models to world models: Translating from natural language to the probabilistic language of thought  | 2023
 | ICLR | Turing Large Language Models Into Cognitive Models | 2024 
 | Nature | Building machines that learn and think with people | 2024
+|        | Turning large language models into cognitive models | 2025 |

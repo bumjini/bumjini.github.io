@@ -77,7 +77,9 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | | SAEs are Good for Steering - If You select the Right Features | 2025 | 
 | |  Improved Representation Steering for Language Models | 2025 | 
 | | AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders | 2025 | 
-
-
-
-
+| | Physics of Language Models: Part 1, Learning Hierarchical Language Structures | 2024 | 
+| | Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process | 2024 | 
+| | Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems | 2024 | 
+| | Physics of Language Models: Part 3.1, Knowledge Storage and Extraction | 2024 |
+| | Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws | 2024 |
+| | From Tokens to Thoughts: How LLMs and Humans Trade Compression for Meaning| 2025 | 
