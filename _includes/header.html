@@ -3,13 +3,13 @@
       <!-- Nav Bar -->
       <nav id="navbar" 
       class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
-        <div class="container"">
+        <div class="container" style="padding-left: 0px; padding-bottom: 0px; margin-bottom: 0px;">
           <img >
           {% if page.title != "about" -%}
             <!-- <img src="/assets/common/KAIST-hi.gif" width="40px" style="margin-right:0px; padding-bottom: 3px;"> -->
           
           <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/"
-             style="margin-left:20px ;">
+             style="margin-left:20px; padding-bottom: 0px;">
               <!-- {%- if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif -%} -->
            <span class="font-weight-bold" style="font-size:larger;font-family:Times New Roman;">{{ site.first_name }} {{ site.middle_name }}  {{ site.last_name }} </span>
         </a>
@@ -27,8 +27,8 @@
             <span class="icon-bar bottom-bar"></span>
           </button>
 
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
+          <div class="collapse navbar-collapse text-right" id="navbarNav" style="padding-bottom: 0px; margin-bottom: 0px;">
+            <ul class="navbar-nav ml-auto flex-nowrap" style="padding-bottom: 0px; margin-bottom: 0px;">
 
               <!-- About -->
               <!-- <li style="font-size: 17px" class="nav-item {% if page.title == 'about' %}active{% endif %}">
@@ -42,24 +42,24 @@
               <!-- Blog -->
 
 
-              <li style="font-size: 17px" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/articles/' | relative_url }}"> Articles 
+              <li style="font-size: 17px; padding-bottom: 0px; margin-bottom: 0px;" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/articles/' | relative_url }}" style="padding-bottom: 0px; margin-bottom: 0px;"> Works 
                   {%- if page.title == "blog" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
               </li>
 
-              <li style="font-size: 17px" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/essay/' | relative_url }}"> Posts
+              <li style="font-size: 17px; padding-bottom: 0px; margin-bottom: 0px;" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/essay/' | relative_url }}" style="padding-bottom: 0px; margin-bottom: 0px;"> Posts
                   {%- if page.title == "essay" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
               </li>
 
-              <li style="font-size: 17px" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/papers/' | relative_url }}"> Reading List
+              <li style="font-size: 17px; padding-bottom: 0px; margin-bottom: 0px;" class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/papers/' | relative_url }}" style="padding-bottom: 0px; margin-bottom: 0px;"> Reading List
                   {%- if page.title == "papers" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -75,7 +75,7 @@
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
               {%- if p.dropdown %}
-              <li style="font-size: 17px" class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
+              <li style="font-size: 17px; padding-bottom: 0px; margin-bottom: 0px;" class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
@@ -92,7 +92,7 @@
                 </div>
               </li>
               {%- else %}
-              <li style="font-size: 17px" class="nav-item {% if page.title == p.title %}active{% endif %}">
+              <li style="font-size: 17px; padding-bottom: 0px; margin-bottom: 0px;" class="nav-item {% if page.title == p.title %}active{% endif %}">
                 <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
