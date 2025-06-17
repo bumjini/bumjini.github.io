@@ -90,3 +90,21 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 |From Tokens to Thoughts: How LLMs and Humans Trade Compression for Meaning| 2025 | 
 |A Survey on Verification and Validation, Testing and Evaluations of Neurosymbolic Artificial Intelligence  | 2024 | 
 
+
+| Title | Year | 
+|---| -----|
+| Mao et al, The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision | 2019 |
+| Yi et al, Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding  | 2018 |
+| Qu et al, Probabilistic Logic Neural Networks for Reasoning | 2019| 
+| Yang et al, Learn to Explain Efficiently via Neural Logic Inductive Learning | 2020 | 
+| Zhang et al, Efficient Probabilistic Logic Reasoning with Graph Neural Networks | 2020 | 
+| DeepProbLog: Neural Probabilistic Logic Programming | 2018 | 
+| Logic Tensor Networks (LTN) |  
+|  A Probabilistic Graphical Model Based on Neural-symbolic Reasoning for Visual Relationship Detection | 2022 | 
+| LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First‑Order Logic Provers | 2023 |
+| Symbolic metaprogram search improves learning efficiency and human‑like performance | 2024 | 
+| From Word Models to World Models: Translating from Natural Language to the Probabilistic Language of Thought | 2023 |
+| The Neuro‑Symbolic Inverse Planning Engine (NIPE): Modeling Probabilistic Social Inferences from Linguistic Inputs | 2023 | 
+| LogiCity: Advancing Neuro‑Symbolic AI with Abstract Urban Simulations | 2024 | 
+| Bridging the Gap: Representation Spaces in Neuro-Symbolic AI | 2024 | 
+
