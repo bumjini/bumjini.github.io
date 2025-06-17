@@ -107,4 +107,5 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 | The Neuro‑Symbolic Inverse Planning Engine (NIPE): Modeling Probabilistic Social Inferences from Linguistic Inputs | 2023 | 
 | LogiCity: Advancing Neuro‑Symbolic AI with Abstract Urban Simulations | 2024 | 
 | Bridging the Gap: Representation Spaces in Neuro-Symbolic AI | 2024 | 
-
+| Embedding Symbolic Knowledge into Deep Networks | 2019 | 
+| LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation | 2024 
