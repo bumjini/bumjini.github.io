@@ -8,6 +8,11 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 ---
 
 | Title | Year | 
+| Marker-Passing Inference in the Scone Knowledge-Base System |  2006 | 
+
+
+
+| Title | Year | 
 |---| -----| ----| 
 | Open Problems in Mechanistic Interpretability | 2025 | 
 |  Propositional Interpretability in Artificial Intelligence| 2025 | 
@@ -83,4 +88,5 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 |Physics of Language Models: Part 3.1, Knowledge Storage and Extraction | 2024 |
 |Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws | 2024 |
 |From Tokens to Thoughts: How LLMs and Humans Trade Compression for Meaning| 2025 | 
-|A Survey on Verification and Validation, Testing and Evaluations of Neurosymbolic Artificial Intelligence  | 2024 
+|A Survey on Verification and Validation, Testing and Evaluations of Neurosymbolic Artificial Intelligence  | 2024 | 
+
