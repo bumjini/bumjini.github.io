@@ -11,8 +11,9 @@ date: 2025-02-03
 featured: true
 img: assets/img/alice02.png
 title: '[ADD-CPS] MultiAgent Swarm System'
-category: 'Project'
-description: 'Full Name will be displayed here.'
+category: 'Prosject'
+tags: ['Multi-Agent', 'Swarm', 'CPS', 'Robotics']
+description: 'Multi-Agent Swarm System for Cyber-Physical Systems'
 _styles: >
     .table {
         padding-top:200px;

@@ -1,7 +1,13 @@
 ---
 layout: default
 authors: 
-    - name: Bumjin Park
+    - name: <strong> Bumjin Park </strong>
+      affiliations:
+        name: KAIST
+    - name: Jinsil Lee
+      affiliations:
+        name: KAIST
+    - name: Jaesik Choi
       affiliations:
         name: KAIST
 bibliography: all.bib
@@ -9,10 +15,11 @@ giscus_comments: false
 disqus_comments: false
 date: 2025-02-03
 featured: true
-img: assets/img/alice02.png
-title: '[ACL 2025 - Main] Deontological Keyword Bias'
+img: assets/img/logos/acl2025.png
+title: 'Deontological Keyword Bias of LLMs'
 category: 'Publication'
-description: 'Full Name will be displayed here.'
+tags: ['ACL2025-main', LLM, 'Bias']
+description: 'Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models'
 _styles: >
     .table {
         padding-top:200px;
@@ -188,7 +195,6 @@ footer {
     <ul>
       <li><a href="" target="_blank">📄 Paper (ACL Anthology, TBD)</a> / <a href="https://arxiv.org/abs/2506.11068" target="_blank">📄 Arxiv </a> / <a href="https://openreview.net/forum?id=YSguiCzp8G&noteId=YSguiCzp8G" target="_blank">📄 OpenReview</a></li>
       <li><a href="https://github.com/fxnnxc/deontological-keyword-bias" target="_blank">💻 Code & Datasets</a></li>
-      <li><a href="https://slides.com/yourdeck" target="_blank">🖥️ Slides (TBD)</a></li>
     </ul>
   </section>
 
@@ -219,7 +225,7 @@ footer {
   <h4>1. Philosophical Foundations of Deontic Logic</h4>
   <p>
     The task is rooted in long-standing philosophical discussions of moral obligation. 
-    Drawing from <strong>Immanuel Kant’s</strong> (1785) concept of moral duty and <strong>von Wright’s</strong> (1951) formalization of deontic logic, 
+    Drawing from <strong>Immanuel Kant's</strong> (1785) concept of moral duty and <strong>von Wright's</strong> (1951) formalization of deontic logic, 
     our study examines how well LLMs understand and replicate deontic reasoning. 
     We extend this analysis into the computational domain, testing how context and language shape model behavior.
   </p>

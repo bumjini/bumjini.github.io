@@ -11,7 +11,7 @@ date: 2025-02-03
 featured: true
 img: assets/img/alice02.png
 title: '[Kolmar] Cosmetic Formulation AI'
-category: 'Project'
+category: 'Prwoject'
 description: 'Full Name will be displayed here.'
 _styles: >
     .table {
