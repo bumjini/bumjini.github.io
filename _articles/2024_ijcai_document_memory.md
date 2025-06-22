@@ -14,7 +14,7 @@ date: 2024-02-01
 featured: true
 img: assets/img/logos/ijcai2024.png
 title: 'Document Memory for LLMs'
-category: 'Publication'
+category: 'Publications'
 tags: ['IJCAI2024', Memory, LLM, Interpretability]
 description: 'A novel document-wise memory architecture and guidance loss for tracking and manipulating document memories in large language models.'
 _styles: >
