@@ -18,7 +18,7 @@ featured: true
 img: assets/img/logos/acl2025.png
 title: 'Deontological Keyword Bias of LLMs'
 category: 'Publication'
-tags: ['ACL2025-main', LLM, 'Bias']
+tags: ['ACL2025-main', LLM, 'Bias', 'Philosophical']
 description: 'Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models'
 _styles: >
     .table {
