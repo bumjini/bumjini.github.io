@@ -9,6 +9,6 @@ date: 2021-01-21
 
 ---
 
-| Tag | Title | Year | URL | 
-|---| -----| ----| ----|
-| Hendler | Handbook of Knowledge Representation |  2008 |  | 
+| Title | URL | 
+| ----| ----|
+| Handbook of Knowledge Representation |  (Hendler, 2008) |
