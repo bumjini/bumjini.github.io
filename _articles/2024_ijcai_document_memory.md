@@ -168,12 +168,13 @@ _styles: >
   <pre>
 @inproceedings{park2024guidance,
   title     = {Memorizing Documents with Guidance in Large Language Models},
-  author    = {Bumjin Park and Jaesik Choi},
+  author    = {Park, Bumjin and Choi, Jaesik},
   booktitle = {Proceedings of the 33rd International Joint Conference on Artificial Intelligence (IJCAI)},
   year      = {2024},
 }
   </pre>
 </section>
+
 
 <section id="contact">
   <h3>Contact</h3>
