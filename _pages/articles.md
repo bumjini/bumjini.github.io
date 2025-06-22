@@ -124,11 +124,6 @@ display_categories: ['Publications', 'Projects', ]
 * ParchGrad: Controlled Internal Gradients for Reliable Saliency Map, <i>  <strong>Bumjin Park </strong>, Giyoung Jeon, and Jaesik Choi </i> [[pdf](https://drive.google.com/file/d/1E_7MIQFcM3livmezMwD1fHmz6gwHm4j1/view?usp=sharing)]
 * Explanation on Pretraining Bias of Finetuned Vision Transformer,  <i>  <strong> Bumjin Park  </strong> and Jaesik Choi. </i>  [[pdf](https://arxiv.org/abs/2211.15428)].
 
----
-
-
-<h3> Domestic Papers </h3>
-
 
 <br>
 <br>
