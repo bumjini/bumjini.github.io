@@ -96,6 +96,13 @@ body.sticky-bottom-footer {
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  
+  // 모바일에서 태그를 아래 줄로 이동
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 .card .card-title {
@@ -120,6 +127,14 @@ body.sticky-bottom-footer {
   justify-content: flex-end;
   flex-shrink: 0;
   width: 35%;
+  
+  // 모바일에서 태그 스타일 조정
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 1.0em;
+    gap: 6px;
+  }
 }
 
 .project-tags .badge {
@@ -141,7 +156,6 @@ body.sticky-bottom-footer {
   background-color: #1700c4;
   color: white;
 }
-
 
 .project-content {
   display: flex;
