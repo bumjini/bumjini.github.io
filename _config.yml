@@ -120,9 +120,9 @@ collections:
   articles:
     output: true
     permalink: /articles/:path/
-  papers:
+  materials:
     output: true
-    permalink: /papers/:path/
+    permalink: /materials/:path/
   etc:
     output: true
     permalink: /etc/:path/

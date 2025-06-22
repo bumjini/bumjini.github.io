@@ -1,17 +1,17 @@
 ---
 layout: default
 title: Publications
-permalink: /papers/
+permalink: /materials/
 description: 
 ---
 
 <div class="publications">
   <div class="paper-grid">
-    {%- assign sorted_papers = site.papers | sort: "date" | reverse -%}
+    {%- assign sorted_materials = site.materials | sort: "date" | reverse -%}
     
-    {%- for paper in sorted_papers -%}
-      {% assign paper_gradient = paper.gradient | default: "linear-gradient(135deg, #f5f7fa 0%, #e4ebf5 100%)" %}
-      {% assign paper_hover = paper.hover-gradient | default: "linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%)" %}
+    {%- for paper in sorted_materials -%}
+      {% assign paper_gradient = paper.gradient | default: "linear-gradient(135deg,rgb(255, 255, 255) 0%,rgb(251, 253, 255) 100%)" %}
+      {% assign paper_hover = paper.hover-gradient | default: "linear-gradient(135deg,rgb(249, 254, 255) 0%,rgb(245, 254, 255) 100%)" %}
       
       <div class="paper-item">
         {% if paper.redirect -%}
@@ -122,10 +122,10 @@ description:
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(173, 216, 230, 0.8) 0%, rgba(173, 216, 230, 0) 100%);
+    background: linear-gradient(to top, rgba(240, 251, 255, 0.8) 0%, rgba(173, 216, 230, 0) 100%);
     color: #333;
     padding: 20px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -140,7 +140,9 @@ description:
   .paper-overlay h2 {
     margin: 0 0 10px 0;
     font-size: 1.2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding:10px;
+    border-radius: 20px;
   }
   
   .paper-links {
