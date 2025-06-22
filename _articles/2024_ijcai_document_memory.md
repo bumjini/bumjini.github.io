@@ -58,6 +58,11 @@ _styles: >
   </p>
 </header>
 
+<div class="styled-logo-container">
+  <img src="/assets/img/logos/ijcai2024.png" class="styled-logo">
+</div>
+
+
 <section id="resources">
   <h3>Resources</h3>
   <ul>
@@ -204,7 +209,7 @@ body {
 /* Header */
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 header h1 {
@@ -302,6 +307,18 @@ footer {
   margin-bottom: 2rem;
   text-align: center;
 }
+
+.styled-logo-container {
+  text-align: center;
+  margin: 0rem 0;
+}
+
+.styled-logo {
+  width: 33%;
+  border-radius: 15px;
+  display: inline-block;
+}
+
 #contact a {
   color:rgb(43, 0, 215);
   text-decoration: underline;

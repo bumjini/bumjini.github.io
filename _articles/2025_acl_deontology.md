@@ -62,7 +62,7 @@ body {
 /* Header */
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 header h1 {
@@ -160,6 +160,18 @@ footer {
   margin-bottom: 2rem;
   text-align: center;
 }
+
+.styled-logo-container {
+  text-align: center;
+  margin: 0rem 0;
+}
+
+.styled-logo {
+  width: 33%;
+  border-radius: 15px;
+  display: inline-block;
+}
+
 #contact a {
   color: #990000;
   text-decoration: underline;
@@ -188,6 +200,11 @@ footer {
       <a href="mailto:bumjin@kaist.ac.kr">bumjin@kaist.ac.kr</a>
     </p>
   </header>
+
+<div class="styled-logo-container">
+  <img src="/assets/img/logos/acl2025.png" class="styled-logo">
+</div>
+
 
   <!-- Paper & Code -->
   <section id="resources">
