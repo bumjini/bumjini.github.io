@@ -2,7 +2,7 @@
 layout: default
 title: main_projects
 permalink: /articles/
-display_categories: ['Publications', 'Projects', ]
+display_categories: ['Research Highlights', 'Projects', ]
 ---
 <!-- pages/projects.md -->
 <div class="projects">
