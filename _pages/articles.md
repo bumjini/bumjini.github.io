@@ -97,6 +97,12 @@ display_categories: ['Research Highlights', 'Projects', ]
   </li>
 
   <li>
+  [<tag style="color:#0000FF"> MS Thesis</tag>] Partitioned Channel Gradient for Reliable Saliency Map in Image Classification, Bumjin Park, supervised by Jaesik Choi [<a href="https://1drv.ms/b/c/ae042a624064f8ca/EWrkp660zT1BuTF8JjPcSa4B6IWTS5NT6V_URVY-WOKzgg?e=Y4GPkz">📂 Drive</a>]
+  </li>
+
+
+
+  <li>
   Cooperative multi-robot task allocation with reinforcement learning, <em> <strong>Bumjin Park</strong>, Cheongwoong Kang, Jaesik Choi, <strong>Applied Sciences</strong></em>, 2021 [<a href="https://www.mdpi.com/2076-3417/12/1/272" target="_blank">pdf</a>]
   </li>
 
