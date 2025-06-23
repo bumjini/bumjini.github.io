@@ -12,6 +12,25 @@ hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 <style>
 body, table, th, td {
     font-family: "Times New Roman", Times, serif;
+    font-size: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+table td { 
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 </style>
 
@@ -25,8 +44,8 @@ body, table, th, td {
 |AbsenceBench: Language Models Can't Tell What's Missing | (Fu, 2025) | 
 |Because we have LLMs, we Can and Should Pursue Agentic Interpretability | (Kim, 2025)
 | Open Problems in Mechanistic Interpretability | (Sharkey, 2025) | 
-| Values in the wild: Discovering and analyzing values in real-world language model interactions [url](https://www.anthropic.com/research/values-wild) | 2025  |
-| Progress on Attention [url](https://transformer-circuits.pub/2025/attention-update/index.html) | 2025 | 
+| Values in the wild: Discovering and analyzing values in real-world language model interactions [[url](https://www.anthropic.com/research/values-wild)] | 2025  |
+| Progress on Attention [[url](https://transformer-circuits.pub/2025/attention-update/index.html)] | 2025 | 
 
 
 ## 2024 
