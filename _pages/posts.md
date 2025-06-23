@@ -82,7 +82,7 @@ description:
   border-bottom: 1px solid #aaa;
   padding-left: 0.5em;
   padding-bottom: 0.5em;
-  background-color: rgb(254, 255, 220);
+  background-color: rgb(250, 250, 250);
 }
 .paper-list-item:last-child {
   border-bottom: none;
