@@ -20,7 +20,7 @@ body, table, th, td {
 
 
 |Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs | (Wen, 2025) | 
-|Thinking fast, slow, and everywhere in between in humans and language models| (Prystawski, 2025) | ㅡ
+|Thinking fast, slow, and everywhere in between in humans and language models| (Prystawski, 2025) |
 |Emergent Symbolic Cognition: A Unifying Computational Framework for Symbolic Thought in Humans and LLMs | (Huddleston, 2025) | 
 |AbsenceBench: Language Models Can't Tell What's Missing | (Fu, 2025) | 
 |Because we have LLMs, we Can and Should Pursue Agentic Interpretability | (Kim, 2025)
