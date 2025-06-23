@@ -35,8 +35,7 @@ table td {
 </style>
 
 
-## 2025 
-
+###### 2025 
 
 |Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs | (Wen, 2025) | 
 |Thinking fast, slow, and everywhere in between in humans and language models| (Prystawski, 2025) |
@@ -48,7 +47,7 @@ table td {
 | Progress on Attention [[url](https://transformer-circuits.pub/2025/attention-update/index.html)] | 2025 | 
 
 
-## 2024 
+#### 2024 
 
 |Kolmogorov–Arnold Transformer | 2024 | 
 |Physics of Language Models: Part 1, Learning Hierarchical Language Structures | (Allen-Zhu, 2024) | 
@@ -58,46 +57,46 @@ table td {
 |Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws | (Allen-Zhu, 2024) |
 
 
-## 2023 
+#### 2023 
 
 
-## 2022
+#### 2022
 
-## 2021 
+#### 2021 
 
-## 2006 ~ 2010
+#### 2006 ~ 2010
 
 | Marker-Passing Inference in the Scone Knowledge-Base System | Fahlman (2006) | 
 | What Is Answer Set Programming? | (Lifschitz, 2008) |
 | The Physical Symbol System Hypothesis: Status and Prospects | (Nilsson, 2007), PSSH |
 
-## 2001 ~ 2005
+#### 2001 ~ 2005
 
 
-## 1990 ~ 2000
+#### 1990 ~ 2000
 
 |A Logical Framework for Default Reasoning | (Poole, 1998) | 
 
-## 1980 ~ 1990
+#### 1980 ~ 1990
 
 | An Assumption-based TMS | (Kleer, 1986) | 
 | Applications of Circumscription to Formalizing Common-Sense Knowledge | (McCarthy, 1986)
 
-## 1970 ~ 1980
+#### 1970 ~ 1980
 
 | Computer science as empirical inquiry: symbols and search  |  (1976), PSSH
 
-## 1960 ~ 1970
+#### 1960 ~ 1970
 
 
-## 1950 ~ 1960
+#### 1950 ~ 1960
 | Formalizing Nonmonotonic Reasoning  Systems | (Etherington, 1955) |
 
-## 1900 ~ 1950
+#### 1900 ~ 1950
 
 
-## 1800 ~ 1900
+#### 1800 ~ 1900
 
 
-## ~ 1800
+#### ~ 1800
 
