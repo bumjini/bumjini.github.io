@@ -125,7 +125,9 @@ v_red   = torch.tensor([0.9, 0.1, 0.0])
 v_blue  = torch.tensor([0.2, 0.8, 0.0])
 v_green = torch.tensor([0.1, 0.2, 0.9])
 concepts = torch.stack([v_red, v_blue, v_green])  # (3, d)
+```
 
+```python
 # Object feature (from ResNet)
 f_obj = torch.tensor([0.85, 0.15, 0.1])  # example object feature
 
@@ -146,7 +148,10 @@ Program = Query(Color, Filter(Rightmost))
 right_scores = [PositionOf(obj).x for obj in object_features]  # Get x-coordinate
 rightmost_index = argmax(right_scores)                        # Index of rightmost object
 mask = one_hot(len(object_features), rightmost_index)         # Binary mask for that object
+```
 
+
+```python
 # Step 3: Apply Query(Color) - predict the color of the selected object
 selected_feat = weighted_sum(object_features, mask)       # Soft selection
 color_probs = ColorOf(selected_feat, color_concepts)      # Probability over color concepts
