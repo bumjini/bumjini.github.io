@@ -6,26 +6,23 @@
 
 @font-face {
   font-family: 'Pretendard';
-  src: url('assets/fonts/Pretendard-Regular.woff2') format('woff2'),
-       url('assets/fonts/Pretendard-Regular.woff') format('woff');
+  src: url('fonts/Pretendard-Regular.off') format('off');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Pretendard';
-  src: url('assets/fonts/Pretendard-Bold.woff2') format('woff2'),
-       url('assets/fonts/Pretendard-Bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Fira Code';
+  src: url('fonts/FiraCode-Regular.off') format('off');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
+
 
 @font-face {
   font-family: 'Pretendard';
-  src: url('assets/fonts/Pretendard-Medium.woff2') format('woff2'),
-       url('assets/fonts/Pretendard-Medium.woff') format('woff');
+  src: url('fonts/Pretendard-Medium.off') format('off');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -33,15 +30,13 @@
 
 @font-face {
   font-family: 'Pretendard-Black';
-  src: url('assets/fonts/Pretendard-Black.woff2') format('woff2'),
-       url('assets/fonts/Pretendard-Black.woff') format('woff');
+  src: url('fonts/Pretendard-Black.off') format('off');
   font-weight: 900;
 }
 
 @font-face {
   font-family: 'Pretendard-ExtraBold';
-  src: url('../assets/fonts/Pretendard-ExtraBold.woff2') format('woff2'),
-       url('../assets/fonts/Pretendard-ExtraBold.woff') format('woff');
+  src: url('fonts/Pretendard-ExtraBold.off') format('off');
   font-weight: 900;
 }
 
@@ -85,7 +80,7 @@ h1, h2, h3,  h4, h5, h6{
 
 h1, h2, h3, h4, h5, h6, strong, div{
   color: var(--global-text-color);
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   // font-family:'Open Sans', sans-serif; ;
   // font-weight: 400;
   // font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
@@ -94,17 +89,17 @@ h1, h2, h3, h4, h5, h6, strong, div{
  li, ul{
   color: var(--global-text-color);
   font-size: var(--global-text-size);
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   line-height: 140%;
   margin-top:10px;
   margin-bottom:10px;
-  font-weight: 420;
+  font-weight: 300;
   // margin-bottom: 10px;
 }
 strong{
   font-weight:720;
   font-size: var(--global-text-size);
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 
   // font-family: 'Open Sans', sans-serif; ;
   // font-family:  "Cambria, Georgia, serif"; //"Roboto", Helvetica, Arial, sans-serif;
@@ -118,10 +113,10 @@ span {
 
 }
 p {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   color: var(--global-text-color);
   line-height: 160%;
-  font-weight: 420;
+  font-weight: 300;
   font-size: var(--global-text-size);
   // word-break: keep-all;
   word-wrap: normal;
@@ -806,22 +801,25 @@ pre {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
-    font-family: 'Liberation Mono', sans-serif; 
+    font-family: 'Fira Code', 'Liberation Mono', sans-serif; 
     line-height: 100%;
-
+    font-size: 110%;
   }
 }
 
 code {
   color: #ffffff;
-  background-color: #006e49;
-  font-family: 'Liberation Mono', sans-serif; 
-  border-radius: 5px;
+  background-color: #150069;
+  font-family: 'Source Code Pro', 'Liberation Mono', sans-serif; 
+  font-weight: 400;
+  border-radius: 10px;
   // border: 5px solid #005f7f; 
   // padding: 1px 1px;
   // font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size:  var(--global-text-size);
+  font-size:  90%;
   padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   padding-right: 5px;
 }
 
@@ -883,9 +881,9 @@ html.transition *:after {
 
 .box-demo-link{
   border-radius: 5px;
-  font-size: 14px;
+  // font-size: 14px;
   background: #302b2f;
-  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-family: "Liberation Mono","Courier New",monospace;
   color: #fff  ;
   // width: 220px;
   padding: 3px;
@@ -960,7 +958,6 @@ margin-bottom: .5rem;
   // font-size: 14px;
   color:black;
   background: #e2e2e2;
-  // font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   // color: #fff  ;
   // width: 220px;
   padding: 2px;
@@ -1058,9 +1055,9 @@ span.badge-toc {
 .tooltip-wrap {
   position: relative;
   border-radius: 5px;
-  font-size: 14px;
+  // font-size: 14px;
   background: #f2f0f1;
-  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-family: "Liberation Mono","Courier New",monospace;
   // color: #fff  ;
   // width: 220px;
   padding: 3px;
@@ -1089,7 +1086,7 @@ span.badge-toc {
   // border:2px solid #7b0000;
   border-radius: 5px;
   padding: 3px;
-  font-size: 14px;
+  // font-size: 14px;
   color:#FFFF00;
   margin: 0;
   text-align:left;
