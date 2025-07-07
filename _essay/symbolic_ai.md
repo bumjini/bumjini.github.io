@@ -62,24 +62,27 @@ Harnad (1990) famously posed the symbol grounding problem:
 
 What are differences between the symbol grounding problem and classification tasks? (See the footnote<d-footnote> Symbol Grounding is about how symbols get their meaning, especially from the world and experience. Classification is about how systems assign labels to data, based on patterns in training data.</d-footnote>.)
 
+Symbolic logic systems must search over all possible instantiations of symbols, even when the rules are known.
+
 
 <strong> Algorithm Examples </strong>
 
-- **DeepProbLog** (Manhaeve et al., 2018) [[go below](#-algorithm-deepproblog)]: The input is processed by a neural predicate `digit(Img, Digit)`, which uses a neural network to produce probabilistic outputs. The error is computed after symbolic reasoning via Prolog, and only the neural network parameters are trained.
+1. **DeepProbLog** (Manhaeve et al., 2018) [[go below](#-algorithm-deepproblog)]: The input is processed by a neural predicate `digit(Img, Digit)`, which uses a neural network to produce probabilistic outputs. The error is computed after symbolic reasoning via Prolog, and only the neural network parameters are trained.
 
-Symbolic logic systems must search over all possible instantiations of symbols, even when the rules are known.
-
-- **Neuro-Symbolic Concept Learner (NS-CL, Mao, 2019)** [[go below](#-algorithm-ns-cl)]:  
+2. **Neuro-Symbolic Concept Learner (NS-CL, Mao, 2019)** [[go below](#-algorithm-ns-cl)]:  
   Given an image and a natural language question, the system first extracts object-level feature vectors from the image. These features are processed through various **neural operators** (e.g., `ShapeOf(obj)`, `ColorOf(obj)`) to generate **soft attribute estimates**. In parallel, the natural language question is parsed into a structured program represented in a **domain-specific language (DSL)**,  
   which defines a sequence of symbolic operations (e.g., Filter, Relate, Query).  The extracted soft facts—probabilistic evaluations of visual concepts—are then used as inputs to execute the **DSL program**. This execution is performed not by a traditional symbolic engine, but by a **quasi-symbolic executor**, also referred to as a **neuro-symbolic program executor**. This executor evaluates the symbolic program over soft neural outputs,  
   enabling differentiable reasoning and end-to-end learning.
 
-- **LOGIC-LM** (Pan et al., 2023) [[go below](#-algorithm-logic-lm)]
+3. **LOGIC-LM** (Pan et al., 2023) [[go below](#-algorithm-logic-lm)]
 A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for faithful logical inference. Shift reasoning execution from LLM to symbolic solvers, leveraging LLMs only for translation (symbol grounding).
-1. **Problem Formulator** – LLM converts a natural language problem into a symbolic representation (FOL, LP, CSP, SAT).
-2. **Symbolic Reasoner** – Deterministic symbolic solver (e.g., Prover9, Pyke, Z3) performs logical inference.
-3. **Result Interpreter** – Maps symbolic result back to natural language.
-4. **Self-Refiner** – Uses solver error messages to revise invalid symbolic forms via iterative prompting.
+- **Problem Formulator** – LLM converts a natural language problem into a symbolic representation (FOL, LP, CSP, SAT).
+- **Symbolic Reasoner** – Deterministic symbolic solver (e.g., Prover9, Pyke, Z3) performs logical inference.
+- **Result Interpreter** – Maps symbolic result back to natural language.
+- **Self-Refiner** – Uses solver error messages to revise invalid symbolic forms via iterative prompting.
+
+4. **A-NESI (Krieken et al., 2023) [[go below](#-algorithm-a-nesi)]
+(Approximate Neurosymbolic Inference)** is a scalable framework that combines neural networks with **symbolic reasoning** for probabilistic neurosymbolic learning tasks. Unlike traditional methods that rely on **exact inference** and suffer from exponential time complexity, A-NESI uses neural models to perform **approximate inference** in polynomial time. It separates prediction and explanation into two neural components trained on synthetic data generated from background knowledge. Additionally, it supports **logical constraints** at test time through a symbolic pruning mechanism, making it well-suited for safety-critical applications.
 
 ### Which Symbolic Engine the LLMs use? 
 An LLM gets a prompt describing the a dedicated task. 
@@ -119,7 +122,13 @@ An LLM gets a prompt describing the a dedicated task.
 - Learning Big Logical Rules by Joining Small Rules, Hocquette, 2024 
 
 
+- NeuPSL (Neural Probabilistic Soft Logic)
 
+- LTN (Logic Tensor Networks) 
+
+- A-NESI : Approximate Neurosymbolic Inference 
+
+- Scallop 
 
 
 
@@ -273,6 +282,68 @@ Answer: (B) False
 ---
 
 
+### 🧠 ALGORITHM: A-NESI
+
+#### 🔍 Symbolic Prediction vs Neural Prediction in A-NESI
+**A-NESI** is a scalable framework for **Probabilistic Neurosymbolic Learning (PNL)** that combines neural perception with symbolic reasoning — without relying on expensive exact inference.
+- ✅ **Scalable Approximate Inference** in polynomial time
+- 🧠 **Neural models** for both prediction and explanation
+- 📘 **Symbolic reasoning** remains intact (no semantic loss)
+- 💬 **Explainability** via most probable world inference
+- 🔐 **Constraint satisfaction** using symbolic pruning
+- 🔄 **Trained using data generated from background knowledge**
+
+
+#### 🧩 Core Components
+
+Given an input $$ x $$ (e.g., images of digits), the **perception model** $$ f(x) $$ outputs a **belief**:
+
+$$
+P = f(x)
+$$
+
+where $$ P $$ is a distribution over possible symbolic worlds $$ w $$ (e.g., digit pairs like (5,8)).
+
+The **symbolic reasoning function** $$ c(w) $$ computes the deterministic output from a world:
+
+$$
+y = c(w)
+$$
+
+This captures prior knowledge such as digit summation or Sudoku validity rules.
+
+A-NESI uses a **joint factorization** of the output distribution:
+
+$$
+q(w, y \mid P) = q(y \mid P) \cdot q(w \mid y, P)
+$$
+
+Here, the **prediction model** $$ q(y \mid P) $$ generates the output autoregressively, while the **explanation model** $$ q(w \mid y, P) $$ identifies the most likely symbolic world that explains the prediction.
+
+To train the system, a belief prior $$ p(P) $$ is used to **generate synthetic training data**. The symbolic function $$ c(w) $$ is applied to each sampled world to produce the supervised output $$ y = c(w) $$. The prediction model is trained by minimizing the following loss:
+
+$$
+\mathcal{L}_{\text{Pred}} = \mathbb{E}_{(P, w)} \left[ -\log q(c(w) \mid P) \right]
+$$
+
+Additionally, the explanation model can be trained using a **joint matching loss** to align the predicted and true joint distributions:
+
+$$
+\mathcal{L}_{\text{Expl}} = \mathbb{E}_{(P, w)} \left[ \left( \log q(w, c(w) \mid P) - \log p(w \mid P) \right)^2 \right]
+$$
+
+| Aspect                     | 🧾 Symbolic Prediction                                                  | 🧠 Neural Prediction                                                           |
+|----------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| **Input**                  | $$ P = f(x) $$                                                         | $$ P = f(x) $$                                                                |
+| **Output generation**      | $$ w = \arg\max_w \, p(w \mid P), \quad y = c(w) $$                    | $$ q(y \mid P) = \prod_{i=1}^{k_Y} q(y_i \mid y_{<i}, P) $$                   |
+| **Reasoning function**     | Uses symbolic reasoning $$ c(w) $$                                     | No symbolic function; reasoning is learned implicitly                         |
+| **Architecture**           | Sampling + symbolic function                                           | RNN-style or Transformer-style autoregressive decoder                         |
+| **Interpretability**       | ✅ High: prediction traceable through $$ w $$ and $$ c(w) $$           | ❌ Low: no explicit reasoning path                                            |
+| **Constraint satisfaction**| ✅ Yes, via symbolic constraints $$ c(w) $$                             | ❌ Not guaranteed (unless symbolic pruning is applied)                        |
+| **Inference speed**        | 🐢 Slower (but scalable with symbolic pruning)                         | ⚡ Fast and parallelizable on GPU                                             |
+| **Accuracy on large $$ N $$** | ✅ Stable even for $$ N = 15 $$                                     | ⚠ May degrade at large $$ N $$ (e.g., MNISTAdd with $$ N = 15 $$)            |
+| **Training role**          | Validates predictions                                                  | Trains $$ f(x) $$ using gradients through $$ q(y \mid P) $$                  |
+| **Best suited for**        | Safety-critical, explainable AI                                        | Fast inference and large-scale applications                                   |
 
 
 
