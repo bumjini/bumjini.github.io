@@ -121,7 +121,7 @@ A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for f
 
 - A-NESI : Approximate Neurosymbolic Inference 
 
-- Scallop 
+- **Scallop (Li, 2023)** [[go below](#-algorithm-scallop)]: Scallop is a neurosymbolic programming language that integrates deep learning with symbolic reasoning through a differentiable logic framework. It allows users to define logical rules in a Datalog-inspired language and combine them with neural models for end-to-end learning. While users provide templates or rule structures, Scallop learns how to map those to task-specific predicates using training data. Predicate names such as `parent` or `ancestor` are typically defined in advance, and the system searches for the best combination of these predicates to satisfy a target objective. This makes Scallop suitable for tasks requiring both perceptual grounding and logical generalization, including knowledge reasoning, planning, and multimodal learning. 
 
 
 
@@ -375,6 +375,55 @@ $$
 Symbolic pruning is especially important in structured tasks like Sudoku or path planning, and the pruning function must be defined per task using logical rules or constraint checkers.
 
 
+---
+
+### 🧠 ALGORITHM: Scallop
+
+
+Scallop is a neurosymbolic programming language that bridges neural perception and symbolic reasoning through differentiable logic programming. It allows users to define logical rules in a declarative language similar to Datalog and integrate them with neural network models in an end-to-end learnable system. The central idea is to separate perception and reasoning: a neural model processes raw input (such as an image or text) into intermediate symbolic representations, and a logic program applies rules over those representations to produce the final output.
+
+A key feature of Scallop is that while the **structure of rules** can be given in the form of templates—such as `Q(X, Y) :- R(X, Z), S(Z, Y)`—the **actual mapping of these variables to task-specific predicates** (e.g., `Q = ancestor`, `R = parent`, `S = ancestor`) is learned from data. This enables the system to generalize over symbolic patterns without requiring full supervision on internal structures. In most applications, the base predicates like `parent`, `friend`, or `colleague` are defined in advance, and Scallop searches over combinations of those to learn rules that best explain the output.
+
+For example, in a knowledge reasoning task, the model may be asked to infer the `ancestor(X, Y)` relation. Given known facts like `parent(A, B)` and `parent(B, C)`, Scallop can learn to compose these into recursive rules that define ancestry. The learning process optimizes both the parameters of the neural perception module and the symbolic reasoning path using a framework based on provenance semirings, allowing gradients to flow from output supervision back through symbolic programs and into the neural components.
+
+Scallop supports recursion, negation, and aggregation in its logic programs, and can be used across a range of domains including visual reasoning, program induction, planning, and reinforcement learning. By combining structured reasoning with perceptual learning in a differentiable and modular way, Scallop enables both interpretability and scalability in neurosymbolic systems.
+
+####  📦 Example: Scallop Code
+
+```scallop
+// Knowledge base facts
+rel is_a("giraffe", "mammal")
+rel is_a("tiger", "mammal")
+rel is_a("mammal", "animal")
+
+// Knowledge base rule
+rel name(a, b) :- name(a, c), is_a(c, b)
+
+// Recognized from an image (neural model output)
+rel name = {
+  0.3::(1, "giraffe"),
+  0.7::(1, "tiger"),
+  0.9::(2, "giraffe"),
+  0.1::(2, "tiger"),
+}
+
+// Aggregation query
+rel num_animals(n) :- n = count(o: name(o, "animal"))
+``` 
+
+#### 🔍 What is Given vs. What is Trained
+
+| Component                                  | Given (Static) ✅                          | Trained (Learned) 🧠                         |
+|-------------------------------------------|--------------------------------------------|---------------------------------------------|
+| Facts (e.g., `is_a("tiger", "mammal")`)   | ✅ Provided explicitly in logic             |                                             |
+| Rule templates (e.g., `Q(X,Y) :- R(X,Z)`) | ✅ Given as abstract logical structure      |                                             |
+| Predicate vocabulary (e.g., `is_a`, `name`) | ✅ Declared in program or data schema       |                                             |
+| Neural predictions (e.g., `name = {...}`) | ❌ Produced by trained neural model         | ✅ Neural model learns from input data       |
+| Rule-body mappings (e.g., `Q = ancestor`) | 🔄 Can be fixed or learned (ILP-style)      | ✅ Selected based on performance from data   |
+| Final prediction (e.g., `num_animals(n)`) | ❌ Derived via symbolic reasoning            | ✅ Supervised through end-to-end training     |
+
+
+---
 
 ## References 
 
@@ -383,3 +432,5 @@ Symbolic pruning is especially important in structured tasks like Sudoku or path
 - Mao, The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision, 2019
 
 - PAN, LOGIC-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning, 2023
+
+- Li, Scallop: A Language for Neurosymbolic Programming, 2023
