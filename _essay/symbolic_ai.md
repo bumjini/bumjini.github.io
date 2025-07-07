@@ -84,13 +84,6 @@ A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for f
 4. **A-NESI (Krieken et al., 2023) [[go below](#-algorithm-a-nesi)]
 (Approximate Neurosymbolic Inference)** is a scalable framework that combines neural networks with **symbolic reasoning** for probabilistic neurosymbolic learning tasks. Unlike traditional methods that rely on **exact inference** and suffer from exponential time complexity, A-NESI uses neural models to perform **approximate inference** in polynomial time. It separates prediction and explanation into two neural components trained on synthetic data generated from background knowledge. Additionally, it supports **logical constraints** at test time through a symbolic pruning mechanism, making it well-suited for safety-critical applications.
 
-### Which Symbolic Engine the LLMs use? 
-An LLM gets a prompt describing the a dedicated task. 
-
-* Deductive reasoning → Logic Programming (LP) → Pyke
-* First-order logic → FOL → Prover9
-* Constraint satisfaction → CSP → python-constraint
-* Analytical reasoning → SAT → Z3
 
 ### Inductive Logic Program (Rule Learning)
 
@@ -161,6 +154,8 @@ solve(E1, E2, E3, Result) :-
 eval(+, A, B, R) :- R is A + B.
 eval(-, A, B, R) :- R is A - B.
 ```
+
+--- 
 
 ### 🧠 ALGORITHM: NS-CL
 
@@ -279,6 +274,16 @@ Answer: (B) False
 - LLM revises symbolic form using in-context error correction examples
 - Retries execution until success or max attempts
 
+#### Which Symbolic Engine the LLMs use? 
+
+An LLM gets a prompt describing the a dedicated task. 
+
+* Deductive reasoning → Logic Programming (LP) → Pyke
+* First-order logic → FOL → Prover9
+* Constraint satisfaction → CSP → python-constraint
+* Analytical reasoning → SAT → Z3
+
+
 ---
 
 
@@ -345,6 +350,29 @@ $$
 | **Training role**          | Validates predictions                                                  | Trains $$ f(x) $$ using gradients through $$ q(y \mid P) $$                  |
 | **Best suited for**        | Safety-critical, explainable AI                                        | Fast inference and large-scale applications                                   |
 
+**Symbolic pruning** in A-NESI improves inference efficiency and ensures logical correctness by eliminating invalid options during the step-by-step generation of symbolic variables. As the model generates each variable (e.g., $$ w_i $$), a task-specific pruning function $$ s_{y, w_{1:i-1}}(w_i) $$ is applied to mask values that violate constraints defined by the symbolic function $$ c(w) $$. This pruning results in a modified distribution:
+
+$$
+q'(w_i \mid w_{1:i-1}, y, P) \propto q(w_i \mid \cdot) \cdot s_{y, w_{1:i-1}}(w_i)
+$$
+
+followed by renormalization:
+
+$$
+q'(w_i = j \mid \cdot) = \frac{q(w_i = j \mid \cdot) \cdot s(j)}{\sum_{j'} q(w_i = j' \mid \cdot) \cdot s(j')}
+$$
+
+For example, in MNISTAdd with target sum $$ y = 13 $$, if $$ w_1 = 9 $$, only $$ w_2 = 4 $$ is valid since $$ 9 + 4 = 13 $$. All other values are pruned using:
+
+$$
+s_{y, w_1}(j) =
+\begin{cases}
+1 & \text{if } w_1 + j = y \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+Symbolic pruning is especially important in structured tasks like Sudoku or path planning, and the pruning function must be defined per task using logical rules or constraint checkers.
 
 
 
