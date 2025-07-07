@@ -55,7 +55,7 @@ Accordingly, the goal of this post is to provide a comprehensive overview of sym
 
 <img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/study_post/symbolicAI_overview.png" width="100%" height="auto" class="styled-image"/>
 
-### Symbol Grounding (Perception to Symbol Mapping)
+### Symbol Grounding (Perception to Symbol Mapping) 
 
 Harnad (1990) famously posed the symbol grounding problem:
 “How can the meanings of words be grounded in anything other than other words?”
@@ -74,8 +74,50 @@ Symbolic logic systems must search over all possible instantiations of symbols, 
   which defines a sequence of symbolic operations (e.g., Filter, Relate, Query).  The extracted soft facts—probabilistic evaluations of visual concepts—are then used as inputs to execute the **DSL program**. This execution is performed not by a traditional symbolic engine, but by a **quasi-symbolic executor**, also referred to as a **neuro-symbolic program executor**. This executor evaluates the symbolic program over soft neural outputs,  
   enabling differentiable reasoning and end-to-end learning.
 
+- **LOGIC-LM** (Pan et al., 2023) [[go below](#-algorithm-logic-lm)]
+A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for faithful logical inference. Shift reasoning execution from LLM to symbolic solvers, leveraging LLMs only for translation (symbol grounding).
+1. **Problem Formulator** – LLM converts a natural language problem into a symbolic representation (FOL, LP, CSP, SAT).
+2. **Symbolic Reasoner** – Deterministic symbolic solver (e.g., Prover9, Pyke, Z3) performs logical inference.
+3. **Result Interpreter** – Maps symbolic result back to natural language.
+4. **Self-Refiner** – Uses solver error messages to revise invalid symbolic forms via iterative prompting.
+
+### Which Symbolic Engine the LLMs use? 
+An LLM gets a prompt describing the a dedicated task. 
+
+* Deductive reasoning → Logic Programming (LP) → Pyke
+* First-order logic → FOL → Prover9
+* Constraint satisfaction → CSP → python-constraint
+* Analytical reasoning → SAT → Z3
 
 ### Inductive Logic Program (Rule Learning)
+
+
+- **Inductive Logic Programming**, Muggleton, S. (1991)
+
+- **FOIL**: Learning logical definitions from relations, Quinlan, J. R. (1990)
+
+- **Progol** (Muggleton, 1995) 
+
+- **Metagol** system for learning meta-interpreted programs, Cropper, A., & Muggleton, S. (2016)
+
+- Ultra-strong machine learning: comprehensibility of programs learned with ILP, Muggleton et al. (2014)
+
+- **∂ILP (Differentiable ILP)** – Evans & Grefenstette, 2018
+
+- **Neural Logic Machines**, Dong, 2019
+
+- **Neural Theorem Provers**, Rocktäschel & Riedel, 2017
+
+- Inductive Logic Programming via Differentiable Forward Chaining, Payani & Fekri (2019)
+
+- Differentiable Learning of Logical Rules for Knowledge Base Reasoning, Yang, Z. et al. (2017)
+
+- Logical neural networks, Campero, A. et al. (2018)
+
+- Learning explanatory rules from noisy data, Evans, R., & Grefenstette, E. (2018)
+
+- Learning Big Logical Rules by Joining Small Rules, Hocquette, 2024 
+
 
 
 
@@ -162,6 +204,76 @@ predicted_color = argmax(color_probs)  # e.g., "Red"
 
 * **Question**: Why this algorithm is called Neuro-Symbolic? <d-footnote>  From the visual scene, the algorithm extracts the probability of each symbolic concept, and the natural language question is transformed into a domain-specific language (DSL). This program directly evaluates symbolic conditions, although the evaluation itself is probabilistic.   </d-footnote>
 
+---
+
+
+### 🧠 ALGORITHM: LOGIC-LM 
+
+Pan et al. introduced LOGIC-LM in 2023.  A neuro-symbolic framework that decouples reasoning from language generation by having LLMs generate symbolic representations, and symbolic solvers execute logical inference.
+LOGIC-LM delegates:
+- **Language understanding → LLM**
+- **Symbolic inference → External solver**
+- Ensures logical **faithfulness**, **robustness**, and **interpretability**
+
+#### **Input:**
+
+- Natural language problem (e.g., multiple-choice or free-form question)
+
+```text
+"Stranger Things" is a popular Netflix show.
+If a Netflix show is popular, Karen will binge-watch it.
+If and only if Karen binge-watches a Netflix show, she will download it.
+Karen does not download "Black Mirror".
+"Black Mirror" is a Netflix show.
+If Karen binge-watches a Netflix show, she will share it to Lisa.
+
+Question: Is the following statement true, false, or uncertain?  
+"Black Mirror" is popular. (A) True  (B) False  (C) Uncertain
+```
+
+#### **Problem Formulator (LLM-generated symbolic form):**
+
+```prolog
+Predicates:
+NetflixShow(x)        # x is a Netflix show
+Popular(x)            # x is popular
+BingeWatch(x, y)      # x binge-watches y
+Download(x, y)        # x downloads y
+Share(x, y, z)        # x shares y to z
+
+Facts:
+NetflixShow(strangerThings) ∧ Popular(strangerThings)
+∀x (NetflixShow(x) ∧ Popular(x) → BingeWatch(karen, x))
+∀x (NetflixShow(x) ∧ BingeWatch(karen, x) ↔ Download(karen, x))
+NetflixShow(blackMirror) ∧ ¬Download(karen, blackMirror)
+∀x (NetflixShow(x) ∧ BingeWatch(karen, x) → Share(karen, x, lisa))
+
+Query:
+Popular(blackMirror)
+```
+
+#### **Symbolic Reasoner Output:**
+
+```text
+Result: false
+```
+
+#### **Result Interpreter Output:**
+
+```text
+Answer: (B) False
+```
+
+#### **Self-Refiner (if symbolic execution fails):**
+
+- Receives error from symbolic solver (e.g., "unbound variable")
+- LLM revises symbolic form using in-context error correction examples
+- Retries execution until success or max attempts
+
+---
+
+
+
 
 
 
@@ -170,3 +282,5 @@ predicted_color = argmax(color_probs)  # e.g., "Red"
 - Mahaeve, DeepProbLog: Neural Probabilistic Logic Programming, 2018
 
 - Mao, The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision, 2019
+
+- PAN, LOGIC-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning, 2023
