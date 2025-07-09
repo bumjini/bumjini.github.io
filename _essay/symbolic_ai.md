@@ -74,15 +74,20 @@ Symbolic logic systems must search over all possible instantiations of symbols, 
   which defines a sequence of symbolic operations (e.g., Filter, Relate, Query).  The extracted soft facts—probabilistic evaluations of visual concepts—are then used as inputs to execute the **DSL program**. This execution is performed not by a traditional symbolic engine, but by a **quasi-symbolic executor**, also referred to as a **neuro-symbolic program executor**. This executor evaluates the symbolic program over soft neural outputs,  
   enabling differentiable reasoning and end-to-end learning.
 
-3. **LOGIC-LM** (Pan et al., 2023) [[go below](#-algorithm-logic-lm)]
+
+3. **NS-VQA** (Neuro-Symbolic Visual QA, Yi et al., 2018) [[go below](#-algorithm-ns-vqa)]: Uses Mask R-CNN to extract visual features and converts natural language questions into a domain-specific language (DSL) using a GRU-based seq2tree model. The resulting logic program is executed as a symbolic reasoning process via a Python program.
+
+
+4. **LOGIC-LM** (Pan et al., 2023) [[go below](#-algorithm-logic-lm)]
 A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for faithful logical inference. Shift reasoning execution from LLM to symbolic solvers, leveraging LLMs only for translation (symbol grounding).
 - **Problem Formulator** – LLM converts a natural language problem into a symbolic representation (FOL, LP, CSP, SAT).
 - **Symbolic Reasoner** – Deterministic symbolic solver (e.g., Prover9, Pyke, Z3) performs logical inference.
 - **Result Interpreter** – Maps symbolic result back to natural language.
 - **Self-Refiner** – Uses solver error messages to revise invalid symbolic forms via iterative prompting.
 
-4. **A-NESI (Krieken et al., 2023) [[go below](#-algorithm-a-nesi)]
+5. **A-NESI (Krieken et al., 2023)** [[go below](#-algorithm-a-nesi)]
 (Approximate Neurosymbolic Inference)** is a scalable framework that combines neural networks with **symbolic reasoning** for probabilistic neurosymbolic learning tasks. Unlike traditional methods that rely on **exact inference** and suffer from exponential time complexity, A-NESI uses neural models to perform **approximate inference** in polynomial time. It separates prediction and explanation into two neural components trained on synthetic data generated from background knowledge. Additionally, it supports **logical constraints** at test time through a symbolic pruning mechanism, making it well-suited for safety-critical applications.
+
 
 
 ### Inductive Logic Program (Rule Learning)
@@ -98,7 +103,9 @@ A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for f
 
 - Ultra-strong machine learning: comprehensibility of programs learned with ILP, Muggleton et al. (2014)
 
-- **∂ILP (Differentiable ILP)** – Evans & Grefenstette, 2018
+- **∂ILP (Differentiable ILP)** [[go below](#-algorithm-differentiable-ilp)]: ∂ILP is a differentiable Inductive Logic Programming system that learns symbolic rules from relational data through gradient-based optimization. It replaces discrete inference with differentiable conjunction and disjunction neurons operating over soft truth values. This design enables interpretable rule learning, supports recursion and predicate invention, and generalizes to unseen examples without relying on hand-crafted rule templates. 
+
+- **pLogicNet** (not strict ILP because trains a weight for a rule) [[go below](#-algorithm-plogicnet)]: pLogicNet is a probabilistic logic neural network that combines the strengths of symbolic logic reasoning and embedding-based knowledge graph completion. It uses predefined logic rules (e.g., composition, inverse, symmetry) and optimizes their weights using a Variational EM algorithm. While it does not learn new rules from scratch, it updates the influence of known rules based on both observed and inferred triples, bridging statistical learning with logical consistency.
 
 - **Neural Logic Machines**, Dong, 2019
 
@@ -377,6 +384,65 @@ Symbolic pruning is especially important in structured tasks like Sudoku or path
 
 ---
 
+### 🧠 ALGORITHM: NS-VQA 
+
+# NS-VQA (Neuro-Symbolic Visual QA) – Detailed Explanation
+
+* Step 1: Scene Parsing (Visual Understanding)
+
+The process begins with an input image that contains various objects. These objects are segmented using Mask R-CNN, which detects and outlines each object in the scene. Once the objects are identified, a convolutional neural network (CNN) processes these segments to extract detailed features such as shape, size, material, color, and 3D position coordinates (x, y, z). These features are organized into a structured scene representation table, where each row corresponds to one object and lists its attributes.
+
+* Step 2: Question Parsing (Program Generation)
+
+Next, the system takes a natural language question as input—such as “How many cubes that are behind the cylinder are large?”—and converts it into a symbolic program. This conversion is performed by a GRU-based LSTM model (a type of seq2tree architecture). The model generates a series of logical operations in a domain-specific language (DSL), forming a symbolic program. For the example question, the generated steps might include filtering for cylinders, identifying objects behind them, filtering those objects for cubes, narrowing down to large ones, and finally counting them.
+
+* Step 3: Program Execution (Reasoning)
+
+The symbolic program is then executed using a Python-based symbolic executor. This executor operates on the structured scene representation to perform reasoning tasks like filtering, spatial relation extraction, and attribute comparison. Each operation manipulates the data step by step, narrowing it down based on the program logic. In the example, the system would end up with a set of large cubes behind the cylinder and return the count—say, 3—as the final answer.
+
+*  Performance Summary
+
+NS-VQA achieves remarkably high accuracy on the CLEVR dataset, outperforming most existing methods. When trained with 270 symbolic programs, it achieves 99.8% overall accuracy. It performs especially well in logically intensive tasks such as counting, comparison, and attribute querying, showing that combining neural perception with symbolic reasoning leads to powerful and interpretable AI systems.
+
+
+---
+
+### 🧠 ALGORITHM: Differentiable ILP
+
+Overview  
+Differentiable ILP (∂ILP) is a neural-symbolic model that learns logical rules from data through differentiable forward chaining. It replaces discrete logical inference with neural computation and enables end-to-end learning without hand-designed rule templates.
+
+Core Components  
+- Ground Atom Valuations:  
+  Each fact (e.g., father(alice, bob)) is assigned a continuous truth value ∈ [0, 1], representing its current belief level. These soft valuations serve as the model’s internal working memory.
+
+- Logical Neurons:  
+  - Conjunction Neuron (fuzzy AND):  
+    Output = product of selected input truth values.  
+  - Disjunction Neuron (fuzzy OR):  
+    Output = 1 - product of complements (i.e., fuzzy OR).  
+  Each neuron has trainable weights (via sigmoid activations) that determine which atoms participate in the logical clause.
+
+- Clause Composition:  
+  The neurons form a layered structure approximating a DNF or CNF formula. Rules are represented as differentiable logic programs where each clause is a soft conjunction or disjunction of atoms.
+
+- Forward Chaining (Iterative Reasoning):  
+  Inference is performed iteratively: at each step, the model updates the truth values of atoms using the current rules. This simulates how new facts are derived over time.
+
+- Loss and Training:  
+  The model is trained by minimizing the cross-entropy between predicted truth values and ground-truth labels. Gradients propagate through the entire reasoning process, enabling the discovery of rule structure and content.
+
+- Predicate Invention and Recursion:  
+  Intermediate atoms (auxiliary predicates) can be created and reused across steps, enabling recursive definitions and higher expressivity in learned logic programs.
+
+Advantages  
+- Learns interpretable symbolic rules with neural gradients  
+- Avoids reliance on rule templates or expert priors  
+- Supports recursion and predicate invention  
+- Bridges symbolic reasoning and differentiable optimization
+
+---
+
 ### 🧠 ALGORITHM: Scallop
 
 
@@ -425,6 +491,44 @@ rel num_animals(n) :- n = count(o: name(o, "animal"))
 
 ---
 
+### 🧠 ALGORITHM: pLogicNet
+
+**pLogicNet** merges symbolic logic (e.g., Markov Logic Networks) with embedding-based models (e.g., TransE, DistMult).
+- It uses predefined logic rules such as Composition, Inverse, Symmetric, and Subrelation.
+- These rules are not learned but their weights are optimized using a Variational EM algorithm.
+- The model enhances knowledge graph reasoning by combining neural predictions with symbolic consistency.
+
+
+- ✅ Does **not** induce new rules; instead, it updates **rule weights**.
+- ✅ Bridges **embedding-based KGE** and **logical consistency**.
+- ✅ Resembles Datalog in how it applies symbolic rules.
+- ✅ Enables interpretable reasoning while preserving neural scalability.
+
+
+#### Learning Procedure (Variational EM)
+
+#### 1. E-Step (Expectation)
+1. Use a KGE (Knowledge Graph Embedding) model to infer hidden triples.
+2. Apply predefined logical rules to expand the inferred graph (via the Markov Blanket).
+
+#### 2. M-Step (Maximization)
+1. Update the weights of logical rules using observed and inferred triples.
+2. Optimize the pseudo-likelihood function for probabilistic inference.
+
+#### Example
+
+```txt
+(A) Newton — BornIn — UK  
+(B) UK — LocatedIn — Europe
+
+Using a composition rule, infer:  
+→ Newton — LocatedIn — Europe
+
+Final Score = 0.82 (KGE) + λ × 1.0 (logical rule inference)
+```
+
+---
+
 ## References 
 
 - Mahaeve, DeepProbLog: Neural Probabilistic Logic Programming, 2018
@@ -434,3 +538,5 @@ rel num_animals(n) :- n = count(o: name(o, "animal"))
 - PAN, LOGIC-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning, 2023
 
 - Li, Scallop: A Language for Neurosymbolic Programming, 2023
+
+- Qu et al, Probabilistic Logic Networks for Reasoning, 2019 
