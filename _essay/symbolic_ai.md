@@ -101,13 +101,9 @@ A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for f
 
 - **Metagol** system for learning meta-interpreted programs, Cropper, A., & Muggleton, S. (2016)
 
-- Ultra-strong machine learning: comprehensibility of programs learned with ILP, Muggleton et al. (2014)
-
 - **∂ILP (Differentiable ILP)** [[go below](#-algorithm-differentiable-ilp)]: ∂ILP is a differentiable Inductive Logic Programming system that learns symbolic rules from relational data through gradient-based optimization. It replaces discrete inference with differentiable conjunction and disjunction neurons operating over soft truth values. This design enables interpretable rule learning, supports recursion and predicate invention, and generalizes to unseen examples without relying on hand-crafted rule templates. 
 
 - **pLogicNet** (not strict ILP because trains a weight for a rule) [[go below](#-algorithm-plogicnet)]: pLogicNet is a probabilistic logic neural network that combines the strengths of symbolic logic reasoning and embedding-based knowledge graph completion. It uses predefined logic rules (e.g., composition, inverse, symmetry) and optimizes their weights using a Variational EM algorithm. While it does not learn new rules from scratch, it updates the influence of known rules based on both observed and inferred triples, bridging statistical learning with logical consistency.
-
-- **Neural Logic Machines**, Dong, 2019
 
 - **Neural Theorem Provers**, Rocktäschel & Riedel, 2017
 
@@ -121,14 +117,19 @@ A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for f
 
 - Learning Big Logical Rules by Joining Small Rules, Hocquette, 2024 
 
+- **Neural Logic Machines**, Dong, 2019
 
 - NeuPSL (Neural Probabilistic Soft Logic)
 
 - LTN (Logic Tensor Networks) 
 
-- A-NESI : Approximate Neurosymbolic Inference 
+- **A-NESI** : Approximate Neurosymbolic Inference 
 
 - **Scallop (Li, 2023)** [[go below](#-algorithm-scallop)]: Scallop is a neurosymbolic programming language that integrates deep learning with symbolic reasoning through a differentiable logic framework. It allows users to define logical rules in a Datalog-inspired language and combine them with neural models for end-to-end learning. While users provide templates or rule structures, Scallop learns how to map those to task-specific predicates using training data. Predicate names such as `parent` or `ancestor` are typically defined in advance, and the system searches for the best combination of these predicates to satisfy a target objective. This makes Scallop suitable for tasks requiring both perceptual grounding and logical generalization, including knowledge reasoning, planning, and multimodal learning. 
+
+
+- **NeSyA: Neurosymbolic Automata**
+
 
 
 
