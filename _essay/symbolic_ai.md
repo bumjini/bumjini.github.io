@@ -97,6 +97,8 @@ A neuro-symbolic reasoning system that combines LLMs with symbolic solvers for f
 
 - **FOIL**: Learning logical definitions from relations, Quinlan, J. R. (1990)
 
+- **FOCL**: 
+
 - **Progol** (Muggleton, 1995) 
 
 - **Metagol** system for learning meta-interpreted programs, Cropper, A., & Muggleton, S. (2016)
