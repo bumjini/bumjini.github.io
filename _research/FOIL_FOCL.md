@@ -8,7 +8,7 @@ date: 2025-07-20
 background_color: rgb(255, 255, 255)
 ---
 
-# FOIL and FOCL: Learning Logical Rules from Examples
+# Learning Logical Rules from Examples
 
 ## 1. Overview
 
