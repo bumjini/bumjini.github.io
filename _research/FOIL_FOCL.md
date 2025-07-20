@@ -29,7 +29,6 @@ They take as input:
 | Use of Domain Theory      | ❌ Not used         | ✅ Utilized for guiding rule search     |
 | Use of Example Patterns   | ❌ Not used         | ✅ Extracted from known examples        |
 
----
 
 ## 2. Concrete Example: Learning `grandfather`
 
@@ -75,8 +74,6 @@ They take as input:
 
         grandfather(X, Y) :- man(X)
 
----
-
 ## 3. FOCL: Search Space Constraints
 
 To improve efficiency, FOCL introduces constraints to reduce the size of the hypothesis space.
@@ -94,8 +91,6 @@ To improve efficiency, FOCL introduces constraints to reduce the size of the hyp
    Example:
 
         between(X, X, Y)  % Invalid: X cannot be between itself and Y
-
----
 
 ## 4. Key Concepts
 
@@ -117,8 +112,6 @@ Example:
 
     % Operational
     illegal(X) :- breaks_law(X), causes_injury(X).
-
----
 
 ## References
 
