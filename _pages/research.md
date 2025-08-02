@@ -50,51 +50,6 @@ description:
     {%- endif -%}
   {%- endfor -%}
 
-<hr>
-<h1> Study </h1>
-<h2>Articles</h2>
-{%- assign sorted_papers = site.study | sort: "date" | reverse -%}
-  {%- assign last_month = "" -%}
-  {%- assign last_year = "" -%}
-  {%- for paper in sorted_papers -%}
-    {%- assign paper_year = paper.date | date: "%Y" -%}
-    {%- assign paper_month = paper.date | date: "%B %Y" -%}
-    {%- if paper_month != last_month -%}
-      {%- if forloop.first == false -%}
-        </div>
-      {%- endif -%}
-      <div class="month-section">
-        <div class="month-header">{{ paper_month | upcase }}</div>
-    {%- endif -%}
-    <a class="paper-link-block" href="{%- if paper.redirect -%}{{ paper.redirect }}{%- elsif paper.url -%}{{ paper.url | relative_url }}{%- else -%}#{%- endif -%}" style="text-decoration:none;color:inherit;">
-      <div class="paper-list-item{% if paper.highlight %} highlight{% endif %}" {% if paper.background_color %}style="background-color: {{ paper.background_color }};"{% endif %}>
-        <div class="paper-title">
-          {%- if paper.italic_title -%}
-            <em>{{ paper.title }}</em>
-          {%- else -%}
-            <strong>{{ paper.title }}</strong>
-          {%- endif -%}
-          {%- if paper.year or paper.authors -%}
-            <span class="paper-authors">
-              {%- if paper.authors -%}
-                {{ paper.authors }}
-              {%- endif -%}
-              {%- if paper.year -%}
-                , {{ paper.year }}
-              {%- endif -%}
-            </span>
-          {%- endif -%}
-        </div>
-        <div class="paper-desc">{{ paper.description }}</div>
-      </div>
-    </a>
-    {%- assign last_month = paper_month -%}
-    {%- assign last_year = paper_year -%}
-    {%- if forloop.last -%}
-      </div>
-    {%- endif -%}
-  {%- endfor -%}
-</div>
 
 <style>
 .research-articles {
