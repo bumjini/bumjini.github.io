@@ -37,4 +37,5 @@ table td {
 
 ###### 2025 
 
-|  AuPair: Golden Example Pairs for Code Repair (ICML 2025)  | [url](https://docs.google.com/document/d/1JlpO7Sev4r7PbrxhOl1adHfu7fwCqHW-ZBlP7GwT76E/edit?tab=t.0) | 
+|  AuPair: Golden Example Pairs for Code Repair (ICML 2025) <br> Self-repair, Fix Quality Matrix, Submodular selection, In-context examples (AuPairs)|  [url](https://docs.google.com/document/d/1JlpO7Sev4r7PbrxhOl1adHfu7fwCqHW-ZBlP7GwT76E/edit?tab=t.0) | 
+| 
