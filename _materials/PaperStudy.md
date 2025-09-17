@@ -40,10 +40,16 @@ table td {
 
 | Conflict-Aware Soft Prompting for Retrieval-Augmented Generation (EMNLP 2025) | [url](https://docs.google.com/document/d/1d1SoIxejfPtmdP7RxHKm7IwuSzywEF3uL5lBTR37b0U/edit?tab=t.0) |
 | KCR: Resolving Long-Context Knowledge Conflicts via Reasoning in LLMs | [url]()| 
+| An Unlearning-based Approach to Conflict-free Model Editing | 
+| Resolving Knowledge Conflicts in Large Language Models | 
+| Can I understand what I create? Self-Knowledge Evaluation of Large Language Models | 
+| Taming Knowledge Conflicts in Language Models (ICML 2025) |
+
 
 
 ### Neuron Interpretation for LLM 
 
+| Unveiling the Pitfalls of Knowledge Editing for Large Language Models (ICLR 2024) | 
 
 ### LLM Study  
 
