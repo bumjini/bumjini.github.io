@@ -34,6 +34,12 @@ table td {
 }
 </style>
 
+### Cognitive 
+
+| Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations | 2025, [url](https://docs.google.com/document/d/1rgwXgDQeqwQkI8NeHTm0AVpMplMXnZO-00_jxmGkNzw/edit?tab=t.0#heading=h.g3anuw1lqn) | 
+|On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts | Tenenbaum, 2025 [url](https://docs.google.com/document/d/1-IA1Q8wAl-FaV7rvpBa3vbnQOpXLOv7BqyzVjOxXvyI/edit?tab=t.0)|
+
+
 ### Steering 
 
 ### Knowledge Conflict 
@@ -50,6 +56,7 @@ table td {
 ### Neuron Interpretation for LLM 
 
 | Unveiling the Pitfalls of Knowledge Editing for Large Language Models (ICLR 2024) | 
+
 
 ### LLM Study  
 

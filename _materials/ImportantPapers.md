@@ -37,6 +37,7 @@ table td {
 
 ###### 2025 
 
+
 | Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety | (Korbak, 2025) | 
 |Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs | (Wen, 2025) | 
 |Thinking fast, slow, and everywhere in between in humans and language models| (Prystawski, 2025) |
