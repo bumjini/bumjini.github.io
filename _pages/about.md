@@ -18,16 +18,51 @@ _styles: >
 ---
 
 
-<img src="/assets/img/bumjini.jpg" width="50%" height="auto" class="styled-image"/>
+<div class="profile-container">
+    <img src="/assets/img/bumjini.jpg" width="40%" height="auto" class="styled-image"/>
+    <div class="intro-text">
+        I study the mind of AI through rigorous analysis of neural representations—the computational "brain" of artificial intelligence. My broader goal is to uncover the General Principles of Mind that underlie both human and artificial cognition. By building this unified understanding, my research seeks to advance AI, deepen our grasp of the human mind, and open new horizons for human knowledge and intellectual growth.
+    </div>
+</div>
 
 <style>
+body, p, h1, h2, h3, h4, h5, h6, li, div, span, strong {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
 .styled-image {
-    width: 300px;
-    border-radius: 15px;
+    width: 200px;
+    height: 240px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
     transition: transform 0.3s ease;
-    display: block;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.intro-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .styled-image {
+        width: 150px;
+        height: 200px;
+    }
 }
 
 .field {
@@ -47,32 +82,7 @@ _styles: >
 </style>
 
 
-<p align="center" style="font-size:1.5rem;">
-    🧠 <b> Understanding AI's Mind</b>
-</p>
-<br>
 
-I am dedicated to **unraveling the mind of AI** through rigorous and precise analysis, grounded in **scientific assumptions about neural representations**—the "brain" of AI.  
-
-Just as **epistemology** has sought to interpret human cognition, my research explores the **fundamental principles** that shape both **human and artificial intelligence**.
-
-<br>
-
-## 🔬 Research Interests
-
-I work at the intersection of **Cognitive Science** and **Artificial Intelligence**, leveraging **mathematics** and **programming** to drive my research in:  
-
-- 🏛 <span style="background-color:#FFE0E0;">**Cognitive Science**</span>  
-- 🧩 <span style="background-color:#E0FFE0;">**Mechanistic Interpretability**</span>  
-- 🏆 <span style="background-color:#E0E0FF;">**Explainable AI (XAI)**</span>  
-- 📖 <span style="background-color:#FFE0FF;">**Large Language Models (LLMs)**</span>  
-- 🤖 <span style="background-color:#FFFFE0;">**Multi-Agent Systems**</span>  
-- 🗣 <span style="background-color:#E0FFFF;">**AI and Communication**</span>  
-<br>
-
-## 🌍 Long-Term Vision  
-
-My goal is to **uncover the General Principles of Mind** that govern both **human and artificial intelligence**, fostering a deeper understanding of cognition through **philosophical and scientific research**.
 <br>
 <br>
 
@@ -123,7 +133,7 @@ My goal is to **uncover the General Principles of Mind** that govern both **huma
 
 [![Brunch](https://img.shields.io/badge/Brunch-000000?style=flat&logo=brunch&logoColor=white)](https://brunch.co.kr/@bumjini) **Brunch** – Writing about AI, science, and philosophy.  
 
----
+<!-- ---
 
 ## Items 
 
@@ -132,7 +142,7 @@ My goal is to **uncover the General Principles of Mind** that govern both **huma
 ---
 
 
-<br>
+<br> -->
 <br>
 <br>
 <br>

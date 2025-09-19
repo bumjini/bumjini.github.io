@@ -1,13 +1,12 @@
 ---
 layout: default
-title: 'Paper Study'
+title: 'Paper Study 2025'
 img: /assets/img/logos/arxiv.png
 date: 2025-09-12
 description: PaperCollections
 gradient: linear-gradient(135deg, #0064e1 0%, #5bd3ff 100%)
 hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 ---
-
 
 <style>
 body, table, th, td {
@@ -61,9 +60,19 @@ table td {
 
 ### LLM Study  
 
-
-
 |Fluid Language Model Benchmarking | COLM 2025 |
 |Language Self-Play For Data-Free Training | (2025) |
+### NMR Logic 
+
+| An Efficient Reasoner for Description Logics of Typicality and Rational Closure? | 2017
+|Generics and Default Reasoning in Large Language Models | 2025 | 
+| Know your exceptions | 2024 | 
+
+
+### LLM Study  
+
+|Compute as Teacher: Turning Inference Compute Into Reference-Free Supervision| 
+|Scaling Agents via Continual Pre-training | 
+| DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning  | 
 |  AuPair: Golden Example Pairs for Code Repair (ICML 2025) <br> Self-repair, Fix Quality Matrix, Submodular selection, In-context examples (AuPairs)|  [url](https://docs.google.com/document/d/1JlpO7Sev4r7PbrxhOl1adHfu7fwCqHW-ZBlP7GwT76E/edit?tab=t.0) | 
 | 
