@@ -18,20 +18,51 @@ _styles: >
 ---
 
 
-<img src="/assets/img/bumjini.jpg" width="40%" height="auto" class="styled-image"/>
+<div class="profile-container">
+    <img src="/assets/img/bumjini.jpg" width="40%" height="auto" class="styled-image"/>
+    <div class="intro-text">
+        I study the mind of AI through rigorous analysis of neural representations—the computational "brain" of artificial intelligence. My broader goal is to uncover the General Principles of Mind that underlie both human and artificial cognition. By building this unified understanding, my research seeks to advance AI, deepen our grasp of the human mind, and open new horizons for human knowledge and intellectual growth.
+    </div>
+</div>
 
 <style>
 body, p, h1, h2, h3, h4, h5, h6, li, div, span, strong {
     font-family: "Times New Roman", Times, serif !important;
 }
 
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
 .styled-image {
-    width: 300px;
-    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
     transition: transform 0.3s ease;
-    display: block;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.intro-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .styled-image {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .field {
