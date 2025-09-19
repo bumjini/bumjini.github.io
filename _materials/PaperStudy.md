@@ -36,6 +36,7 @@ table td {
 
 ### Cognitive 
 
+|Planted in Pretraining, Swayed by Finetuning: A Case Study on the Origins of Cognitive Biases in LLMs | 2025 COLM | 
 | Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations | 2025, [url](https://docs.google.com/document/d/1rgwXgDQeqwQkI8NeHTm0AVpMplMXnZO-00_jxmGkNzw/edit?tab=t.0#heading=h.g3anuw1lqn) | 
 |On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts | Tenenbaum, 2025 [url](https://docs.google.com/document/d/1-IA1Q8wAl-FaV7rvpBa3vbnQOpXLOv7BqyzVjOxXvyI/edit?tab=t.0)|
 
@@ -55,10 +56,14 @@ table td {
 
 ### Neuron Interpretation for LLM 
 
-| Unveiling the Pitfalls of Knowledge Editing for Large Language Models (ICLR 2024) | 
-
+| Unveiling the Pitfalls of Knowledge Editing for Large Language Models  | (ICLR 2024)
+| The Origins of Representation Manifolds in Large Language Models | (2025)  
 
 ### LLM Study  
 
+
+
+|Fluid Language Model Benchmarking | COLM 2025 |
+|Language Self-Play For Data-Free Training | (2025) |
 |  AuPair: Golden Example Pairs for Code Repair (ICML 2025) <br> Self-repair, Fix Quality Matrix, Submodular selection, In-context examples (AuPairs)|  [url](https://docs.google.com/document/d/1JlpO7Sev4r7PbrxhOl1adHfu7fwCqHW-ZBlP7GwT76E/edit?tab=t.0) | 
 | 
