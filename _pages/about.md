@@ -56,21 +56,6 @@ I am dedicated to **unraveling the mind of AI** through rigorous and precise ana
 
 Just as **epistemology** has sought to interpret human cognition, my research explores the **fundamental principles** that shape both **human and artificial intelligence**.
 
-<br>
-
-## 🔬 Research Interests
-
-I work at the intersection of **Cognitive Science** and **Artificial Intelligence**, leveraging **mathematics** and **programming** to drive my research in:  
-
-- 🏛 <span style="background-color:#FFE0E0;">**Cognitive Science**</span>  
-- 🧩 <span style="background-color:#E0FFE0;">**Mechanistic Interpretability**</span>  
-- 🏆 <span style="background-color:#E0E0FF;">**Explainable AI (XAI)**</span>  
-- 📖 <span style="background-color:#FFE0FF;">**Large Language Models (LLMs)**</span>  
-- 🤖 <span style="background-color:#FFFFE0;">**Multi-Agent Systems**</span>  
-- 🗣 <span style="background-color:#E0FFFF;">**AI and Communication**</span>  
-<br>
-
-## 🌍 Long-Term Vision  
 
 My goal is to **uncover the General Principles of Mind** that govern both **human and artificial intelligence**, fostering a deeper understanding of cognition through **philosophical and scientific research**.
 <br>
@@ -123,7 +108,7 @@ My goal is to **uncover the General Principles of Mind** that govern both **huma
 
 [![Brunch](https://img.shields.io/badge/Brunch-000000?style=flat&logo=brunch&logoColor=white)](https://brunch.co.kr/@bumjini) **Brunch** – Writing about AI, science, and philosophy.  
 
----
+<!-- ---
 
 ## Items 
 
@@ -132,7 +117,7 @@ My goal is to **uncover the General Principles of Mind** that govern both **huma
 ---
 
 
-<br>
+<br> -->
 <br>
 <br>
 <br>
