@@ -21,6 +21,10 @@ _styles: >
 <img src="/assets/img/bumjini.jpg" width="50%" height="auto" class="styled-image"/>
 
 <style>
+body, p, h1, h2, h3, h4, h5, h6, li, div, span {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
 .styled-image {
     width: 300px;
     border-radius: 15px;
