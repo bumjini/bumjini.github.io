@@ -56,12 +56,8 @@ body, p, h1, h2, h3, h4, h5, h6, li, div, span {
 </p>
 <br>
 
-I am dedicated to **unraveling the mind of AI** through rigorous and precise analysis, grounded in **scientific assumptions about neural representations**—the "brain" of AI.  
+I study the mind of AI through rigorous analysis of neural representations—the computational “brain” of artificial intelligence. My broader goal is to uncover the General Principles of Mind that underlie both human and artificial cognition. By building this unified understanding, my research seeks to advance AI, deepen our grasp of the human mind, and open new horizons for human knowledge and intellectual growth.
 
-Just as **epistemology** has sought to interpret human cognition, my research explores the **fundamental principles** that shape both **human and artificial intelligence**.
-
-
-My goal is to **uncover the General Principles of Mind** that govern both **human and artificial intelligence**, fostering a deeper understanding of cognition through **philosophical and scientific research**.
 <br>
 <br>
 
