@@ -38,9 +38,9 @@ body, p, h1, h2, h3, h4, h5, h6, li, div, span, strong {
 }
 
 .styled-image {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 180px;
+    height: 240px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     flex-shrink: 0;
@@ -60,7 +60,7 @@ body, p, h1, h2, h3, h4, h5, h6, li, div, span, strong {
     }
     
     .styled-image {
-        width: 200px;
+        width: 150px;
         height: 200px;
     }
 }
@@ -82,8 +82,6 @@ body, p, h1, h2, h3, h4, h5, h6, li, div, span, strong {
 </style>
 
 
-
-I study the mind of AI through rigorous analysis of neural representations—the computational “brain” of artificial intelligence. My broader goal is to uncover the General Principles of Mind that underlie both human and artificial cognition. By building this unified understanding, my research seeks to advance AI, deepen our grasp of the human mind, and open new horizons for human knowledge and intellectual growth.
 
 <br>
 <br>
