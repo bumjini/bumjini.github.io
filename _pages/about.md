@@ -38,7 +38,7 @@ body, p, h1, h2, h3, h4, h5, h6, li, div, span, strong {
 }
 
 .styled-image {
-    width: 180px;
+    width: 200px;
     height: 240px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
