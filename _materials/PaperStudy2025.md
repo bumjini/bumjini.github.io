@@ -59,7 +59,6 @@ table td {
 
 ### LLM Study  
 
-
 |Compute as Teacher: Turning Inference Compute Into Reference-Free Supervision| 
 |Scaling Agents via Continual Pre-training | 
 | DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning  | 
