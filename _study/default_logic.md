@@ -19,10 +19,6 @@ Consider the following two statements:
 
 Classical logic has no built-in mechanism for accommodating exceptions like penguins. Once you accept the rule that all birds can fly, the system cannot revise this conclusion without contradiction. This is where non-monotonic logic — and in particular, default logic — becomes useful.
 
-
-<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/study_post/penguine.png" width="100%" height="auto" class="styled-image"/>
-
-
 ## What Is Default Logic?
 
 Default logic, introduced by Raymond Reiter (1980), is a formalism that extends classical logic with the ability to draw conclusions tentatively — that is, as long as no contradictory evidence is discovered. The core idea is to express generalizations in a way that allows for exceptions, without requiring explicit enumeration of every exception.
