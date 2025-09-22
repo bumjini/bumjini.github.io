@@ -21,7 +21,7 @@ _styles: >
 <div class="profile-container">
     <img src="/assets/img/bumjini.jpg" width="40%" height="auto" class="styled-image"/>
     <div class="intro-text">
-        I study the mind of AI through rigorous analysis of neural representations—the computational "brain" of artificial intelligence. My broader goal is to uncover the General Principles of Mind that underlie both human and artificial cognition. By building this unified understanding, my research seeks to advance AI, deepen our grasp of the human mind, and open new horizons for human knowledge and intellectual growth.
+        Bumjin Park studies the mind of AI through rigorous analysis of neural representations—the computational "brain" of artificial intelligence. My broader goal is to uncover the General Principles of Mind that underlie both human and artificial cognition. By building this unified understanding, my research seeks to advance AI, deepen our grasp of the human mind, and open new horizons for human knowledge and intellectual growth.
     </div>
 </div>
 
