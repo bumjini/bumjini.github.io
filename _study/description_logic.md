@@ -1,10 +1,11 @@
 ---
 layout: distill
-title: 'Description Logic'
+title: 'NMR -Description Logic'
 description: Nonmonotonic Reasoning
 gradient: linear-gradient(135deg, #0064e1 0%, #5bd3ff 100%)
 hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
-background_color: rgb(255, 231, 214)
+background_color: rgb(187, 255, 92)
+date: 2025-09-03
 ---
 
 ### Introduction to Description Logic (DL)

@@ -10,7 +10,7 @@ description:
   <ul class="study-list">
     {%- assign sorted_papers = site.study | sort: "date" | reverse -%}
     {%- for paper in sorted_papers -%}
-      <li>
+      <li style="background-color: {{ paper.background_color | default: 'rgb(225, 225, 225)' }};">
         <a href="{%- if paper.redirect -%}{{ paper.redirect }}{%- elsif paper.url -%}{{ paper.url | relative_url }}{%- else -%}#{%- endif -%}">
           <span class="study-title">{{ paper.title }}</span>
           <span class="study-date">{{ paper.date | date: "%Y.%m.%d" }}</span>
@@ -21,10 +21,22 @@ description:
 
 
 <style>
+body {
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  min-height: 100vh;
+}
+
 .research-articles {
   max-width: 800px;
   margin: 0 auto;
   font-family: 'Georgia', serif;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .study-list {
@@ -34,9 +46,12 @@ description:
 }
 
 .study-list li {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.2em;
   border-bottom: 1px solid #eee;
-  padding-bottom: 0.8em;
+  padding-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 0.2em;
 }
 
 .study-list li:last-child {
