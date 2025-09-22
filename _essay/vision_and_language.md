@@ -27,6 +27,8 @@ _styles: >
 
 ---
 
+### Comparison between Visual and Linguistic Features
+
 Visual models inevitably contain conceptual structures within their sparse autoencoder (SAE) representations, but interpreting these concepts seems far less straightforward than in language. With language, semantics tend to be immediately determined by the tokens themselves, whereas visual semantics resist such direct mapping. Visual distinctions may allow for clustering and alignment, but the function that links representations to meaning is harder to establish than in linguistic domains.
 
 In particular, linguistic representations can often be chained together in a chain-of-thought style, linking features to form logical circuits. Visual representations, however, emphasize continuity and spatial relations more than explicit logic. Perhaps following the trajectory of visual forms resembles the human mode of imaginative thinking, where spatial reasoning supports higher cognition. In this sense, visual encodings could be essential tools for helping humans reason about spatial and dynamic structures.
@@ -35,9 +37,9 @@ If language encodings capture relationships between explicit symbols and their c
 
 Ultimately, models will move toward integrating images and texts, just as humans combine logical information with spatiotemporal understanding. The challenge lies in how such vast streams of information can be efficiently encoded, stored, and interrelated. I firmly believe that AI’s modes of thought will elevate human cognition. Humans learn continuously from birth through imitation, and to support that process, we need ever more advanced models to imitate. Lessons and wisdom take shape in surprising forms that move us. I am only searching for those yet-unrevealed forms of wonder.
 
-⸻
+--- 
 
-Extended Version with Additional Ideas
+### Additional Ideas
 
 The difficulty of interpreting visual encodings stems from their continuous, compositional, and dynamic nature. Unlike discrete tokens in language, visual inputs vary smoothly under rotation, scale, and illumination. The same object may appear in countless forms, making direct semantic assignment elusive. Moreover, visual scenes are rarely composed of isolated elements—they blend objects, relations, and backgrounds in ways that resist clean symbolic partitioning. This makes the semantic “anchors” of vision inherently less stable than those of language.
 
