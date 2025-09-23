@@ -9,6 +9,16 @@ date: 2025-09-01
 ---
 
 
+Circumscription is built on the principle of minimization. When we designate a set of predicates—such as `Abnormal(x)`—as minimized, the logic chooses models in which these predicates are made false as much as possible. Unless there is a compelling reason to assume an exception, `Abnormal` is set to 0. This reflects the guiding idea of circumscription: do not assume abnormalities unless forced to. As a result, in the absence of additional knowledge, the default inference that birds fly is preserved, because abnormal cases are minimized.  
+
+When new knowledge is introduced, the situation changes. Suppose we add the fact “Tweety is a penguin” together with the rule “penguins are abnormal.” In order to satisfy the underlying theory \(\Gamma\), every admissible model must now assign `Abnormal(Tweety)=1`. Circumscription still attempts to minimize `Abnormal`, but minimization cannot override the logical requirement imposed by the new information. The set of minimal models therefore shifts: models that previously set `Abnormal(Tweety)=0` are no longer valid, and only those with `Abnormal(Tweety)=1` remain.  
+
+This demonstrates the central mechanism of circumscription. It selects models that both satisfy the theory and minimize the chosen predicates. At first, the minimal models supported the conclusion that Tweety flies. After the penguin information is added, the minimal models change, and the conclusion flips to Tweety does not fly.  
+
+The overall effect is a form of reasoning that is non-monotonic. In classical monotonic logic, once a conclusion is derived, it remains valid even as more facts are added. In circumscription, by contrast, conclusions may be revised when new knowledge changes which models count as minimal. For this reason, circumscription is considered a framework for non-monotonic reasoning: conclusions can be withdrawn when new information forces additional exceptions into the minimal models.  
+
+
+
 # Understanding Circumscription in Non-Monotonic Logic
 
 Circumscription is a formal method introduced by **John McCarthy (1980)** to handle **non-monotonic reasoning** — situations where adding new knowledge can invalidate previous conclusions. It plays a key role in representing **default assumptions** and **minimizing exceptions** in logical systems.
