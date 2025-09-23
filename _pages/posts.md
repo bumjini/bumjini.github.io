@@ -19,15 +19,15 @@ description:
         <div class="card-badge">NEW</div>
       </div>
       <div class="card-content">
-        <h3 class="card-title">Epistemology – William James </h3>
-        <p class="card-description">What makes something 'true'?</p>
+        <h3 class="card-title">Towards Understanding Symbolic AI </h3>
+        <p class="card-description">Methods with explicit representations</p>
         <div class="card-meta">
-          <span class="card-date">2025/06/07</span>
-          <span class="card-category">Epistemology</span>
+          <span class="card-date">2025/09/20</span>
+          <span class="card-category">Symbolic AI</span>
         </div>
       </div>
       <div class="card-overlay">
-        <a href="epistemology12-james" class="card-link">Read More</a>
+        <a href="symbolic_ai" class="card-link">Read More</a>
       </div>
     </div>
 

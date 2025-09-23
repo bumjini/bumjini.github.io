@@ -8,7 +8,6 @@ gradient: linear-gradient(135deg, #0064e1 0%, #5bd3ff 100%)
 hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
 ---
 
-
 <style>
 body, table, th, td {
     font-family: "Times New Roman", Times, serif;
@@ -36,6 +35,7 @@ table td {
 
 ### Cognitive 
 
+|Planted in Pretraining, Swayed by Finetuning: A Case Study on the Origins of Cognitive Biases in LLMs | 2025 COLM | 
 | Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations | 2025, [url](https://docs.google.com/document/d/1rgwXgDQeqwQkI8NeHTm0AVpMplMXnZO-00_jxmGkNzw/edit?tab=t.0#heading=h.g3anuw1lqn) | 
 |On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts | Tenenbaum, 2025 [url](https://docs.google.com/document/d/1-IA1Q8wAl-FaV7rvpBa3vbnQOpXLOv7BqyzVjOxXvyI/edit?tab=t.0)|
 
@@ -46,10 +46,22 @@ table td {
 
 | Conflict-Aware Soft Prompting for Retrieval-Augmented Generation (EMNLP 2025) | [url](https://docs.google.com/document/d/1d1SoIxejfPtmdP7RxHKm7IwuSzywEF3uL5lBTR37b0U/edit?tab=t.0) |
 | KCR: Resolving Long-Context Knowledge Conflicts via Reasoning in LLMs | [url]()| 
+| An Unlearning-based Approach to Conflict-free Model Editing | 
+| Resolving Knowledge Conflicts in Large Language Models | 
+| Can I understand what I create? Self-Knowledge Evaluation of Large Language Models | 
+| Taming Knowledge Conflicts in Language Models (ICML 2025) |
+
 
 
 ### Neuron Interpretation for LLM 
 
+| Unveiling the Pitfalls of Knowledge Editing for Large Language Models  | (ICLR 2024)
+| The Origins of Representation Manifolds in Large Language Models | (2025)  
+
+### LLM Study  
+
+|Fluid Language Model Benchmarking | COLM 2025 |
+|Language Self-Play For Data-Free Training | (2025) |
 ### NMR Logic 
 
 | An Efficient Reasoner for Description Logics of Typicality and Rational Closure? | 2017

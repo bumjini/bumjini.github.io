@@ -1,10 +1,11 @@
 ---
 layout: distill
-title: 'Default Logic'
+title: 'NMR - Default Logic'
 description: Nonmonotonic Reasoning
 gradient: linear-gradient(135deg, #0064e1 0%, #5bd3ff 100%)
 hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
-background_color: rgb(255, 231, 214)
+background_color: rgb(187, 255, 92)
+date: 2025-09-02
 ---
 
 ## Motivation: When Classical Logic Falls Short
@@ -17,10 +18,6 @@ Consider the following two statements:
 - "Penguins are birds that cannot fly."
 
 Classical logic has no built-in mechanism for accommodating exceptions like penguins. Once you accept the rule that all birds can fly, the system cannot revise this conclusion without contradiction. This is where non-monotonic logic — and in particular, default logic — becomes useful.
-
-
-<img src="https://d2acbkrrljl37x.cloudfront.net/bumjini-blog/study_post/penguine.png" width="100%" height="auto" class="styled-image"/>
-
 
 ## What Is Default Logic?
 

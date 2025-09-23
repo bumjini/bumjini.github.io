@@ -6,7 +6,7 @@ disqus_comments: false
 date: 2025-06-07
 featured: true
 img: assets/img/modeling_love.jpeg
-title: 'Epistemology 12 – William James'
+title: 'Epistemology – William James'
 category: 'AI'
 description: "What makes something 'true'? <br> William James, the father of American pragmatism, argued that truth is what works."
 

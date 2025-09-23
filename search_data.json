@@ -32,10 +32,10 @@ layout: none
       "content": {{ paper.content | strip_html | jsonify }},
       "img": {{ paper_img | jsonify }},
       "type": "paper"
-    }{% unless forloop.last and site.articles.size == 0 %},{% endunless %}
+    }{% unless forloop.last and site.essay.size == 0 %},{% endunless %}
   {% endfor %}
   
-  {% for article in site.articles %}
+  {% for article in site.essay %}
     {% assign article_img = article.img | default: "" %}
     {% if article_img != "" and article_img != null %}
       {% assign first_char = article_img | slice: 0 %}
