@@ -149,3 +149,9 @@ Circumscribing $\text{Flies}(x)$ would force the set of flying birds to be as sm
 ## Conclusion
 
 Circumscription gives us a powerful tool to represent "**things are normally like this, unless otherwise stated**" in a logically rigorous way. By deciding **which predicate to minimize**, we can fine-tune the inference behavior of intelligent systems.
+
+
+
+## References 
+
+Alviano, Query Answering in Propositional Circumscription,  IJCAI, 2018

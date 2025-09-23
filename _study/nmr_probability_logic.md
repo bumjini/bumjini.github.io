@@ -1,13 +1,9 @@
 ---
 layout: distill
-title: 'Non-monotonic Reasoning'
+title: 'NMR - Probabilistic and Fuzzy NMR'
 description: Nonmonotonic Reasoning
 gradient: linear-gradient(135deg, #0064e1 0%, #5bd3ff 100%)
 hover-gradient: linear-gradient(135deg, #00c6fb 0%, #005bea 100%)
-background_color: rgb(255, 231, 214)
-date: 2025-08-11
+background_color: rgb(187, 255, 92)
+date: 2025-09-03
 ---
-
-
-
-### sequential한 형태는 이미 non-monotonic reasoning을 하지 않는가? 

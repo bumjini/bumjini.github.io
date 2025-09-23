@@ -75,3 +75,4 @@ date: 2025-09-03
 
 | A non-monotonic Description Logic for reasoning about typicality | Giodano, 2013 | 
 | A Description Logic Framework for Commonsense Conceptual Combination Integrating Typicality, Probabilities and Cognitive Heuristics | Lieto, 2018 | 
+| Defeasible Reasoning in Description Logics: An Overview on DL^N | 

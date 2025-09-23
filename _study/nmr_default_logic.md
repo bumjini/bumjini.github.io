@@ -243,3 +243,14 @@ In future posts, we’ll explore real applications, complexity results, and comp
 
 - A logic for default reasoning. Artificial Intelligence, R. Reiter, 1980.
 - A Tutorial on Default Logics, G. Antoniou, 1999
+
+
+
+---
+
+Default Logic and Bounded Treewidth, Johannes
+
+Large-Scale Commonsense Knowledge for Default Logic Reasoning, Järv
+
+
+
