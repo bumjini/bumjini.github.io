@@ -18,7 +18,6 @@ This demonstrates the central mechanism of circumscription. It selects models th
 The overall effect is a form of reasoning that is non-monotonic. In classical monotonic logic, once a conclusion is derived, it remains valid even as more facts are added. In circumscription, by contrast, conclusions may be revised when new knowledge changes which models count as minimal. For this reason, circumscription is considered a framework for non-monotonic reasoning: conclusions can be withdrawn when new information forces additional exceptions into the minimal models.  
 
 
-
 # Understanding Circumscription in Non-Monotonic Logic
 
 Circumscription is a formal method introduced by **John McCarthy (1980)** to handle **non-monotonic reasoning** — situations where adding new knowledge can invalidate previous conclusions. It plays a key role in representing **default assumptions** and **minimizing exceptions** in logical systems.
