@@ -176,3 +176,6 @@ These are not mere stylistic choices; they determine whether reasoning is **caut
 
 Defeasible Logic captures the **tentative, revisable** nature of practical reasoning. **Arguments** are the core explanatory artifact: minimal, consistent packages of defeasible commitments that **justify** conclusions, **expose** where they can be defeated, and **support** principled acceptance under dialectical evaluation. This pairing (DL + arguments) yields systems that are not only robust to exceptions and new evidence, but also *auditable* and *aligned with human reasoning*.
 
+
+
+Allaway, Evaluating Defeasible Reasoning in LLMs with DEFREASING, 2025 

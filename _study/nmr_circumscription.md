@@ -16,7 +16,7 @@ When new knowledge is introduced, the situation changes. Suppose we add the fact
 This demonstrates the central mechanism of circumscription. It selects models that both satisfy the theory and minimize the chosen predicates. At first, the minimal models supported the conclusion that Tweety flies. After the penguin information is added, the minimal models change, and the conclusion flips to Tweety does not fly.  
 
 The overall effect is a form of reasoning that is non-monotonic. In classical monotonic logic, once a conclusion is derived, it remains valid even as more facts are added. In circumscription, by contrast, conclusions may be revised when new knowledge changes which models count as minimal. For this reason, circumscription is considered a framework for non-monotonic reasoning: conclusions can be withdrawn when new information forces additional exceptions into the minimal models.  
-
+r
 
 # Understanding Circumscription in Non-Monotonic Logic
 
@@ -164,3 +164,9 @@ Circumscription gives us a powerful tool to represent "**things are normally lik
 ## References 
 
 Alviano, Query Answering in Propositional Circumscription,  IJCAI, 2018
+
+McCarthy, Applications of Circumscription to Formalizing Common Sense Knowledge, 1986
+
+Bonatti, Description Logics with Circumscription, 2006
+
+Walter Forkel, Revisiting Circumscription, 2017
