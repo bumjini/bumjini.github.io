@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Research
+title: Notes
 permalink: /essay/
 description: 
 ---
 
-<h2> Essay Highlights</h2>
+<h2> </h2>
 
 <hr>
 

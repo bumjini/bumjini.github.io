@@ -1,6 +1,6 @@
 ---
 layout: default
-title: main_projects
+title: Articles
 permalink: /articles/
 display_categories: ['Research Highlights', 'Projects', ]
 ---

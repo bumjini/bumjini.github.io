@@ -1,6 +1,6 @@
 ---
 layout: default
-title: main_projects
+title: Memo
 permalink: /memo/
 display_categories: ['AI', 'Vienna 1900', 'Art']
 ---
