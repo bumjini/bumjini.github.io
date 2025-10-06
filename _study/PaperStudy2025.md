@@ -42,6 +42,9 @@ table td {
 
 ### Steering 
 
+
+| Activation Steering in Generative Settings via Contrastive Causal Mediation Analysis | 
+
 ### Knowledge Conflict 
 
 | Conflict-Aware Soft Prompting for Retrieval-Augmented Generation (EMNLP 2025) | [url](https://docs.google.com/document/d/1d1SoIxejfPtmdP7RxHKm7IwuSzywEF3uL5lBTR37b0U/edit?tab=t.0) |
