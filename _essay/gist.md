@@ -10,13 +10,26 @@ title: 'Github Gist'
 category: 'AI'
 description: 'Github Gist'
 _styles: >
-    .table {
-        padding-top:200px;
-        margin-bottom: 2.5rem
+    table {
+        padding-top: 200px;
+        margin-bottom: 2.5rem;
         border-bottom: 2px;
+        width: 120%;
+        margin-left: -10%;
+        margin-right: -10%;
+        table-layout: fixed;
+    }
+    .table {
+        padding-top: 200px;
+        margin-bottom: 2.5rem;
+        border-bottom: 2px;
+        width: 120%;
+        margin-left: -10%;
+        margin-right: -10%;
+        table-layout: fixed;
     }
     .p {
-        font-size:20px;
+        font-size: 20px;
         font-weight: 250;
     }
     .styled-image {
@@ -29,7 +42,7 @@ _styles: >
     .styled-image:hover {
         transform: scale(1.2);
     }
-    .td .th {
+    td, th {
         font-size: 1.10rem;
         font-family: 'Times New Roman', Times, serif;
     }
@@ -37,6 +50,6 @@ _styles: >
 
 
 
-| Tag | Description | URL | 
-|:---|:---|:--:|
-| LLM_generation_from_list.py  |  A simple code of output generation given a list of text  | [gist](https://gist.github.com/fxnnxc/0f6ba72fbcf4352c83e43f4fad065779)|  
+| Tag | Description |
+|:---|:---|
+| LLM_generation_from_list.py  /  [[gist](https://gist.github.com/fxnnxc/0f6ba72fbcf4352c83e43f4fad065779)] |  A simple code of output generation given a list of text  | 
