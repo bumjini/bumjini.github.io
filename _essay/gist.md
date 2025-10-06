@@ -53,3 +53,4 @@ _styles: >
 | Tag | Description |
 |:---|:---|
 | LLM_generation_from_list.py  /  [[gist](https://gist.github.com/fxnnxc/0f6ba72fbcf4352c83e43f4fad065779)] |  A simple code of output generation given a list of text  | 
+| LLM_**NMR**_generation_flight.py /  [[gist](https://gist.github.com/fxnnxc/f57ec07fe38b6f0ae961855fdd0cbc0f)] | A NMR generation and evaluation code for flight | 
