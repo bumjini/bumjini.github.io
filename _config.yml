@@ -139,6 +139,10 @@ collections:
     output: true
     permalink: /essay/:path/
 
+  box:
+    output: true
+    permalink: /box/:path/
+
 
 news_limit: 10000
 
