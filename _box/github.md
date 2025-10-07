@@ -52,7 +52,7 @@ _styles: >
 <table>
   <thead>
     <tr>
-      <th style="width: 5%;">URL</th>
+      <th style="width: 7%;">URL</th>
       <th style="width: 50%;">Name </th>
       <th style="width: 40%;">Description</th>
     </tr>
