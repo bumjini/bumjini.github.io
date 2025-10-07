@@ -52,6 +52,7 @@ _styles: >
 
 | Tag | Description |
 |:---|:---|
-| LLM_generation_from_list.py  /  [[gist](https://gist.github.com/fxnnxc/0f6ba72fbcf4352c83e43f4fad065779)] |  A simple code of output generation given a list of text  | 
-| LLM_**NMR**_generation_flight.py /  [[gist](https://gist.github.com/fxnnxc/f57ec07fe38b6f0ae961855fdd0cbc0f)] | A NMR generation and evaluation code for flight | 
+| LLM_generation_from_list.py   [[gist](https://gist.github.com/fxnnxc/0f6ba72fbcf4352c83e43f4fad065779)] |  A simple code of output generation given a list of text  | 
+| LLM_**NMR**_generation_flight.py   [[gist](https://gist.github.com/fxnnxc/f57ec07fe38b6f0ae961855fdd0cbc0f)] | A NMR generation and evaluation code for flight | 
 | **DEFREASING** Dataset [[gist](https://gist.github.com/fxnnxc/b6dcd027cbb1db5ac904074f89ffafbe)] | Explore dataset of Evaluating Defeasible Reasoning in LLMs with DEFREASING | 
+| **LCS** token matching for **activation_patching**.py  [[gist](https://gist.github.com/fxnnxc/73b2c6558a46c7445ff7fbadb6583a14)] |  Longest Common Sequence Matching to Inject Clean run to the Corrupted Run| 
