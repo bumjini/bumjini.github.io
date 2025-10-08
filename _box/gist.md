@@ -69,14 +69,39 @@ _styles: >
       <td>A NMR generation and evaluation code for flight</td>
     </tr>
     <tr>
+      <td><a href="https://gist.github.com/fxnnxc/73b2c6558a46c7445ff7fbadb6583a14">gist</a></td>
+      <td><strong>LCS</strong> Token Matching for <strong>Activation Patching</strong></td>
+      <td>Longest Common Sequence Matching to Inject Clean run to the Corrupted Run</td>
+    </tr>
+    <tr>
+      <td><a href="https://gist.github.com/fxnnxc/3236d2f6b3ecd52525842da9bececd8f">gist</a></td>
+      <td><strong>LoRA</strong> LLM simple<strong></strong></td>
+      <td>Simple train and load code for LoRA fine-tuning of LLMs</td>
+    </tr>
+  </tbody>
+</table> 
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 5%;">URL</th>
+      <th style="width: 50%;">File Info </th>
+      <th style="width: 40%;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
       <td><a href="https://gist.github.com/fxnnxc/b6dcd027cbb1db5ac904074f89ffafbe">gist</a></td>
       <td><strong>DEFREASING</strong> Dataset</td>
       <td>Explore dataset of Evaluating Defeasible Reasoning in LLMs with DEFREASING</td>
     </tr>
     <tr>
-      <td><a href="https://gist.github.com/fxnnxc/73b2c6558a46c7445ff7fbadb6583a14">gist</a></td>
-      <td><strong>LCS</strong> Token Matching for <strong>Activation Patching</strong></td>
-      <td>Longest Common Sequence Matching to Inject Clean run to the Corrupted Run</td>
+      <td><a href="https://gist.github.com/fxnnxc/c9d5147ac79bb4a04df5c85aca8b2c8f">gist</a></td>
+      <td><strong>Counterfactual</strong>Dataset </td>
+      <td>Counterfactual Entity Relation Training dataset.</td>
     </tr>
+
   </tbody>
 </table> 
