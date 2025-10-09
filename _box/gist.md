@@ -93,6 +93,11 @@ _styles: >
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://gist.github.com/fxnnxc/f24a0ffd5e02b7aae814ea8b2b3c62f6">gist</a></td>
+      <td><strong>Random Circumscription</strong>Dataset </td>
+      <td>NMR: Circumscription Dataset Construction.</td>
+    </tr>
+    <tr>
       <td><a href="https://gist.github.com/fxnnxc/b6dcd027cbb1db5ac904074f89ffafbe">gist</a></td>
       <td><strong>DEFREASING</strong> Dataset</td>
       <td>Explore dataset of Evaluating Defeasible Reasoning in LLMs with DEFREASING</td>
