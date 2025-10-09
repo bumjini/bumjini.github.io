@@ -58,11 +58,15 @@ _styles: >
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><a href="https://github.com/fxnnxc/optimal-token-for-llm-probing/tree/main#optimal-token-for-llm-probing">github</a></td>
-      <td>Where Should I Probe? 
- <strong>Optimal Token for LLM Probing</strong></td>
-      <td>Research question for the probing position of LLMs for binary concept detection.</td>
-    </tr>
+        <tr>
+          <td><a href="https://github.com/fxnnxc/optimal-token-for-llm-probing/tree/main#optimal-token-for-llm-probing">github</a></td>
+          <td>Where Should I Probe? <strong>Optimal Token for LLM Probing</strong></td>
+          <td>Research question for the probing position of LLMs for binary concept detection.</td>
+        </tr>
+          <tr>
+          <td><a href="https://github.com/fxnnxc/context-binding-of-llm-knowledge-editing-with-lora">github</a></td>
+          <td>Context-Binding for Knowledge Editing<strong>LLM LoRA Experiments</strong></td>
+          <td>Compare data format for knowledge editing with LoRA (Qwen / 5 Layers / Counterfactual Dataset) </td>
+        </tr>
   </tbody>
 </table> 
