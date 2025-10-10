@@ -63,10 +63,15 @@ _styles: >
           <td>Where Should I Probe? <strong>Optimal Token for LLM Probing</strong></td>
           <td>Research question for the probing position of LLMs for binary concept detection.</td>
         </tr>
-          <tr>
+        <tr>
           <td><a href="https://github.com/fxnnxc/context-binding-of-llm-knowledge-editing-with-lora">github</a></td>
-          <td>Context-Binding for Knowledge Editing<strong>LLM LoRA Experiments</strong></td>
+          <td>Context-Binding for Knowledge Editing <strong>LLM LoRA Experiments</strong></td>
           <td>Compare data format for knowledge editing with LoRA (Qwen / 5 Layers / Counterfactual Dataset) </td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/fxnnxc/nmr-abnormal-concept-probing">github</a></td>
+          <td>nmr-abnormal-concept-probing <strong>Probing NMR</strong></td>
+          <td>Simple experiments on internal representation probing to verify where LLMs separate "Bird Fly / Don't Fly". We consider the P → Q proposition. </td>
         </tr>
   </tbody>
 </table> 
