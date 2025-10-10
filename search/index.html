@@ -9,9 +9,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>B. Park | Page not found</title>
+    <title>B. Park | Search</title>
     <meta name="author" content="B. Park  " />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
 
@@ -32,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👐🏼</text></svg>">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://bumjini.github.io/404.html">
+    <link rel="canonical" href="https://bumjini.github.io/search/">
     
     <!-- Dark Mode -->
     
@@ -109,21 +110,31 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- page.html -->
-        <div class="post">
-
-          <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
-          </header>
-
-          <article>
-            <!-- <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://bumjini.github.io/">here</a>.</p> -->
-
-          </article>
-
+      <div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="search-container">
+        <h3>Search Documents</h3>
+        <input type="text" id="search-input" class="form-control mb-3" placeholder="Search by title, tag, or content...">
+        
+        <div class="mb-3">
+          <h5>Posts</h5>
+          <div class="btn-group mb-3" role="group">
+            <button type="button" class="btn btn-outline-secondary type-filter active" data-type="all">All</button>
+            <button type="button" class="btn btn-outline-primary type-filter" data-type="paper">Papers</button>
+            <button type="button" class="btn btn-outline-info type-filter" data-type="article">Articles</button>
+          </div>
         </div>
 
+        <hr>
+        
+        <div id="search-results" class="list-group mt-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/js/search.js"></script> 
     </div>
 
     <!-- Footer -->
